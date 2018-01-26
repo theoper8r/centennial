@@ -1,0 +1,45 @@
+[
+  {
+    "title" : "Birth of an Industry",
+    "summary" : "As IAAPA celebrates its centennial, the association is part of the attractions industry’s rich global legacy stretching back more than 500 years. The industry’s roots come from the pleasure gardens that spread throughout European cities from the 1500s to the early 1800s. They provided a place to escape teeming cities and featured many attractions familiar to us today, including landscaped gardens, live entertainment, fireworks, dancing, games, and even predecessors to the merry-go-round, roller coaster, and Ferris wheel. This legacy remains in places like Bakken, outside Copenhagen, Denmark, which opened in 1583, and the Prater in Vienna, which dates back to 1766; Mack Rides, meanwhile, started manufacturing show wagons in 1780.  Pleasure gardens migrated to North America in the late 1700s, but it was not until the latter half of the 1800s that amusement parks began to truly emerge as their own industry. In the years following the American Civil War, transportation companies began developing pleasure resorts to generate traffic. The trolley park was born with the development of the first successful electric street railway, and amusement parks spread rapidly through the United States. Seaside resorts offering more extended getaways opened throughout the United States and England. Chicago’s World’s Columbian Exposition in 1893 and the emergence of Coney Island in New York as the center of the amusement park universe brought global attention to this emerging sector. With new parks opening worldwide at a rapid clip, companies began forming to supply equipment to these new operations. It was obvious a new industry was emerging, and its members needed to speak with one voice",
+    "decade" : 0,
+    "articles" :[
+      {
+        "year" : 1907,
+        "img" : "something",
+        "text" : "Birth of an IndustryAs IAAPA celebrates its centennial, the association is part of the attractions industry’s rich global legacy stretching back more than 500 years. The industry’s roots come from the pleasure gardens that spread throughout European cities from the 1500s to the early 1800s. They provided a place to escape teeming cities and featured many attractions familiar to us today, including landscaped gardens, live entertainment, fireworks, dancing, games, and even predecessors to the merry-go-round, roller coaster, and Ferris wheel. This legacy remains in places like Bakken, outside Copenhagen, Denmark, which opened in 1583, and the Prater in Vienna, which dates back to 1766; Mack Rides, meanwhile, started manufacturing show wagons in 1780.  Pleasure gardens migrated to North America in the late 1700s, but it was not until the latter half of the 1800s that amusement parks began to truly emerge as their own industry. In the years following the American Civil War, transportation companies began developing pleasure resorts to generate traffic. The trolley park was born with the development of the first successful electric street railway, and amusement parks spread rapidly through the United States. Seaside resorts offering more extended getaways opened throughout the United States and England. Chicago’s World’s Columbian Exposition in 1893 and the emergence of Coney Island in New York as the center of the amusement park universe brought global attention to this emerging sector. With new parks opening worldwide at a rapid clip, companies began forming to supply equipment to these new operations. It was obvious a new industry was emerging, and its members needed to speak with one voice. 1907 |  In September, an article appeared in Street Railway Journal proposing the start of an organization of the owners of “open-air amusement interests in North America.” The purpose would be to “advance mutual interests in securing information for the use of its members regarding construction of various devices, the booking of the best European and American attractions, and the discussion of best business methods in management.”An organizational meeting was held in October in New York City where the name, National Amusement Park Association, was adopted along with eight organizational principles. Many bear a strong resemblance to the priorities of today’s IAAPA, such as government relationsand sharing of effective business practices in areas like landscaping, crowd control, and employment. Other priorities, however, reflected adifferent era—coordinated booking of live entertainment, the association’s top priority, and ensuring each facility contained a “woman’s building, where women and children may be cared for, and where, if necessary, a trained nurse may be provided.” The first general meeting was held Nov. 14. Among the officers was Andrew McSwigan of Kennywood, who would go on to help found IAAPA a decade later. A newly formed statistics committee sent a 40-question survey to all members. Permanent offices were established in New York City."
+      },
+      {
+        "year" : 1908,
+        "img" : "something",
+        "text" : "The organization’s second annual meeting took place in September where the members voted to eliminate the initiation fee and reduce the annual dues. The National Amusement Park Association quietly disbanded not long after. It was obviously an organization ahead of its time as the industry was still too wedded to the transportation companies that were so critical to the initial growth."
+      }
+    ]
+  },
+  {
+    "title" : "An Identity Emerges",
+    "summary" : "By the 1910s, the amusement industry had matured. Transportation companies, which looked at amusement parks as a sideline, wereexiting the business, and a new generation of entrepreneurs was acquiring the facilities as its primary business. As consumer demandand technology continued to evolve, the focus of amusement parks shifted from passive attractions such as concerts and dancing to amusement rides, and amusement parks began taking on the identity we know today. With businesspeople now running amusement parks as their primary source of income, they came to the common realization that there were looming threats to their operations andthey needed to speak with one voice, set standards for high-quality operations, and share operational ideas",
+    "articles" :[
+      {
+        "year" : 1916,
+        "img" : "something",
+        "text" : "More than 600 outdoor showmen from North America and Europe gathered at New York’s Hotel Astor in December, where the call was put out to organize like most other industries to present a unified front and protect their interests. The group adopted the name Association of Outdoor Showmen of the World."
+      },
+      {
+        "year" : 1917,
+        "img" : "something",
+        "text" : "The showmen reassembled in Chicago in February to formalize the organization, adopting the name National Outdoor Showmen’s Association (NOSA). Termed a “protective association,” key constituent groups included circuses, carnivals, agents, fairs, showboats, amusement parks, aviation and racing shows, and tent shows. NOSA quickly demonstrated its value the next month when it was able to present a unified front and defeat a proposed amusement tax in Missouri.Proposed restrictions during World War I, including the elimination of traveling shows as non-essential to the war effort along with proposed limitations on manufactured goods, prompted a meeting of a Special War Emergencies Committee in December. “Clean amusements are just as necessary to the health of a nation as clothing or food,” said NOSA Secretary Frank Albert."
+      },
+      {
+        "year" : 1918,
+        "img" : "something",
+        "text" : "A committee of park operators gathered in June in New York City to discuss issues vital to the amusement park business. The result was the formation of a Park Division within the National Outdoor Showmen’s Association. This is recognized as the birth of whatwould become IAAPA."
+      },
+      {
+        "year" : 1919,
+        "img" : "something",
+        "text" : "Feeling its needs were incompatible with traveling shows, a call was issued by the Park Division of NOSA, in June, to reconvene to restructure the organization to better reflect the interests of fixed-site amusements."
+      }
+    ]
+  }
+]

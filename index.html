@@ -1,0 +1,86 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular-resource.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
+
+
+
+
+
+    <script src="app.js" charset="utf-8"></script>
+    <script src="/services/eraFactory.js"></script>
+    <script src="/controllers/eraIndex.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Alex Wandres</title>
+    <!-- <base href="/#/"> -->
+  </head>
+  <body ng-app="centennial">
+
+    <div class="social">
+      <img src="img/fb-logo29.png" alt="">
+      <img src="img/twitter-logo.png" alt="" style="width:29px; height:29px;">
+    </div>
+    <nav>
+
+      <div class="nav-div hvr-fade" style="background-color:#C99F3A; width:180px; height:100px; padding-left:30px; margin-top:-4px; margin-bottom:-10px; margin-left:-30px;">
+        <a ui-sref="Home"><img id="logo" src="img/logo-2.png" style="width:140px; height:90px;"></a>
+      </div>
+      <div class="nav-div hvr-fade">
+        <div class="">
+          <p class="nav-title"><a ui-sref="About" class="title">ABOUT IAAPA</a></p>
+        </div>
+      </div>
+
+      <div class="nav-div hvr-fade">
+        <div class="dropdown">
+          <p class="nav-title" style="font-size:14px;">CELEBRATE THE PAST</p>
+          <div class="dropdown-content">
+            <a ui-sref="Timeline" style="font-size:14px;">IAAPA TIMELINE</a>
+            <a ui-sref="Leaders" style="font-size:14px;">LEADERS OF DISTINCTION</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="nav-div hvr-fade">
+        <div class="dropdown">
+          <p class="nav-title" style="font-size:14px;"><a ui-sref="Stories">YOUR IAAPA STORIES</a></p>
+        </div>
+      </div>
+
+      <div class="nav-div hvr-fade">
+        <div class="dropdown">
+          <p class="nav-title" style="font-size:14px;"><a ui-sref="History">ORAL HISTORY PROJECT</a></p>
+        </div>
+      </div>
+
+      <div class="nav-div hvr-fade">
+        <div class="dropdown">
+          <p class="nav-title" style="font-size:14px;">BUILD THE FUTURE</p>
+          <div class="dropdown-content">
+            <a ui-sref="newHome" style="font-size:14px;">A NEW HOME</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="nav-div hvr-fade">
+        <div class="dropdown">
+          <p class="nav-title" style="font-size:14px;"><a ui-sref="Events">CENTENNIAL EVENTS</a></p>
+        </div>
+      </div>
+
+    </nav>
+
+    <div data-ui-view>
+    </div>
+      <div class="footer">
+        <p style="margin-bottom:7px; display:inline-block;">INTERNATIONAL ASSOCIATION OF AMUSEMENT PARKS AND ATTRACTIONS </p>
+        <p>9205 SOUTHPARK CENTER LOOP  &nbsp; | &nbsp;  ORLANDO, FL USA 32819  &nbsp; | &nbsp;  +1 321/319-7600  &nbsp; | &nbsp;  <a href="http://www.iaapa.org" target="_blank" style="text-decoration:none; color:white; ">WWW.IAAPA.ORG</a></p>
+      </div>
+
+  </body>
+</html>
