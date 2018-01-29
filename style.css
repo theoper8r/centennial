@@ -8,8 +8,8 @@ nav {
   justify-content: space-around;
   /* overflow: hidden; */
   margin-top:5px;
-  border-bottom: 1px solid #696969;
-  border-top: 1px solid #696969;
+  border-bottom: 1px solid #b09b66;
+  border-top: 1px solid #b09b66;
   /* font-weight:bold; */
   padding-bottom:10px;
   padding-top: 4px;
@@ -94,6 +94,27 @@ nav a {
 .next {
   display:none;
 }
+
+.third {
+  display:none;
+}
+
+#next-page {
+  display:block;
+}
+
+#next-decade {
+  display:none;
+}
+
+#prev-page {
+  display:none;
+}
+
+#prev-decade {
+  display:block;
+}
+
 .content-heads {
   font-family: avenir;
   color: #b09b66;
@@ -203,6 +224,10 @@ button:focus { outline:0 !important; }
   width:99%;
   height:500px;
   /* border:1px solid #696969; */
+}
+
+.timeline-container {
+  margin-bottom:100px;
 }
 
 .story-box {

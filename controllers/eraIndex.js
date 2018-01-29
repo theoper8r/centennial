@@ -54,6 +54,13 @@ function indexController(eraFactory, $http, $state) {
     console.log(document.getElementsByClassName('first-4'))
     var firstPages = document.getElementsByClassName('first')
     var nextPages = document.getElementsByClassName('next')
+    var thirdPages = document.getElementsByClassName('third')
+    var nextSlide = document.getElementById("next-page")
+    var nextDecade = document.getElementById("next-decade")
+    var prevPage = document.getElementById('prev-page')
+    var prevDecade = document.getElementById('prev-decade')
+
+
     if (firstPages.length < 4){
       // this.decade += 1
       this.setDecade(this.decade + 1)
@@ -68,7 +75,13 @@ function indexController(eraFactory, $http, $state) {
     //   console.log(this.slideNum)
     //   $state.go('Timeline' + this.decade)
     // }
+if (this.slideNum === 1 && nextPages.length==0) {
 
+  nextSlide.style.display = "none"
+  nextDecade.style.display = "block"
+}
+
+if (this.slideNum === 1 && nextPages.length>0) {
     for (var i=0;i<firstPages.length;i+=1){
       firstPages[i].style.display = 'none';
     }
@@ -76,33 +89,91 @@ function indexController(eraFactory, $http, $state) {
     for (var t=0;t<nextPages.length;t+=1){
       nextPages[t].style.display = 'block';
     }
-
+      if (this.slideNum === 1 && nextPages.length>0 && thirdPages.length==0){
+      prevPage.style.display = "block"
+      prevDecade.style.display = "none"
+      nextSlide.style.display = "none"
+      nextDecade.style.display = "block"
+    }
+    prevPage.style.display = "block"
+    prevDecade.style.display = "none"
     this.slideNum = 2
-    console.log(this.slideNum)
+    console.log('slide: ' + this.slideNum)
 
-  }
+  } else if (this.slideNum === 1 && nextPages.length>0 && thirdPages.length==0){
+    prevPage.style.display = "block"
+    prevDecade.style.display = "none"
+    nextSlide.style.display = "none"
+    nextDecade.style.display = "block"
+  } else if (this.slideNum === 2 && thirdPages.length>0) {
+      for (var t=0;t<nextPages.length;t+=1){
+        nextPages[t].style.display = 'none';
+      }
+
+      for (var x=0;x<thirdPages.length;x+=1){
+        thirdPages[x].style.display = 'block';
+      }
+      prevPage.style.display = "block"
+      prevDecade.style.display = "none"
+      nextSlide.style.display = "none"
+      nextDecade.style.display = "block"
+      this.slideNum = 3
+      console.log('slide: ' + this.slideNum)
+  } else if (this.slideNum === 2) {
+      nextSlide.style.display = "none"
+      nextDecade.style.display = "block"
+      prevPage.style.display = "block"
+      prevDecade.style.display = "none"
+    }
+
+    else if (this.slideNum === 3) {
+      nextSlide.style.display = "none"
+      nextDecade.style.display = "block"
+    }
+}
 
   this.handlePrev = function() {
     console.log('prev')
     console.log(document.getElementsByClassName('first-4'))
     var firstPages = document.getElementsByClassName('first')
     var nextPages = document.getElementsByClassName('next')
+    var thirdPages = document.getElementsByClassName('third')
+    var nextSlide = document.getElementById("next-page")
+    var nextDecade = document.getElementById("next-decade")
+    var prevPage = document.getElementById('prev-page')
+    var prevDecade = document.getElementById('prev-decade')
     console.log(this.slideNum)
-    if (this.slideNum === 1) {
-      this.decade -= 1
-      $state.go('Timeline' + this.decade)
-
+    // if (this.slideNum === 1) {
+    //   this.decade -= 1
+    //   $state.go('Timeline' + this.decade)
+    //
+    // }
+    if (this.slideNum === 2) {
+      for (var i=0;i<firstPages.length;i+=1){
+        firstPages[i].style.display = 'block';
+      }
+      for (var t=0;t<nextPages.length;t+=1){
+        nextPages[t].style.display = 'none';
+      }
+      nextSlide.style.display = "block"
+      nextDecade.style.display = "none"
+      prevPage.style.display = "none"
+      prevDecade.style.display = "block"
+      this.slideNum = 1
     }
-
-    else {
-    for (var i=0;i<firstPages.length;i+=1){
-      firstPages[i].style.display = 'block';
+    else if (this.slideNum === 3){
+    for (var i=0;i<thirdPages.length;i+=1){
+      thirdPages[i].style.display = 'none';
     }
 
     for (var t=0;t<nextPages.length;t+=1){
-      nextPages[t].style.display = 'none';
+      nextPages[t].style.display = 'block';
     }
-    this.slideNum = 1
+    nextSlide.style.display = "block"
+    nextDecade.style.display = "none"
+    prevPage.style.display = "block"
+    prevDecade.style.display = "none"
+    this.slideNum = 2
     }
 
   }

@@ -9,7 +9,7 @@
   <a class ="timeline-links" ui-sref="Timeline7" ng-click="vm.setDecade(7); vm.navSelect(7)">1970s</a>
   <a class ="timeline-links" ui-sref="Timeline8" ng-click="vm.setDecade(8); vm.navSelect(8)">1980s</a>
   <a class ="timeline-links" ui-sref="Timeline9" ng-click="vm.setDecade(9); vm.navSelect(9)">1990s</a>
-  <a class ="timeline-links" ui-sref="Timeline10" ng-click="vm.setDecade(10); vm.navSelect(10)">2000s</a>
+  <a class ="timeline-links selectedNav" ui-sref="Timeline10" ng-click="vm.setDecade(10); vm.navSelect(10)">2000s</a>
   <a class ="timeline-links" ui-sref="Timeline11" ng-click="vm.setDecade(11); vm.navSelect(11)">2010s</a>
 </div>
 
@@ -23,8 +23,8 @@
 <div class="timeline-container" style="">
   <div class="line-div">
     <div class="timeline-year" style="height:30px; width:40px; margin-top:4px; background-color:white;">
-      <form ng-submit="vm.handlePrev()">
-
+      <a id="prev-decade" ui-sref ="Timeline9"><button type="button" name="text"><img src="img/prev-slide-btn.png" style="width:40px; height:40px;" alt="">PREV PAGE</button></a>
+      <form id="prev-page" ng-submit="vm.handlePrev()">
         <button ng-click="vm.handlePrev()" type="button" name="text"><img src="img/prev-slide-btn.png" style="width:40px; height:40px;" alt=""></button>
       </form>
     </div>
@@ -106,9 +106,9 @@
       </div>
     </div>
 
-    <!-- <div class="timeline-block next">
-      <img src="img/year-bar/19.png" alt="">
-      <div class="timeline-content next" style="width:auto; height:auto; max-width:300px;">
+    <div class="timeline-block third">
+      <img src="img/year-bar/2008.png" alt="">
+      <div class="timeline-content third" style="width:auto; height:auto; max-width:300px;">
         <img class="timeline-img" src="img/year_photos/2008.png" alt="">
         <p class="" style="color:#696969; font-size:12px;"><strong>2008 |</strong>  The inaugural European Ride Safety Report was released in cooperation with Europarks.In February, Andreas Andersen of Copenhagen’s Tivoli Gardens was hired as the new Executive Director, IAAPA European Operations, to support an enhanced presence in Europe. This included a more robust safety strategy, increased government relations, training, a newweb portal, and the IAAPA Europe Newsletter.</p><p class="indent-p">Continuing a long-term dedication to safety, the association also held its first IAAPA Safety Conference in the Middle East in Dubai in February. In June, it conducted an Attractions Safety Awareness Week in partnership with its members to enhance governmental and public understanding of the industry’s safety practices and outstanding record.</p><p class="indent-p">Two European trade shows were held as part of a plan to transition the Euro Attractions Show from a winter to a fall event—one in Nice,France, in January and a second in Munich in October.
         </p><p class="indent-p">The Summer Meeting, a tradition since 1949, was held for the final time at Oktoberfest in Munich prior to EAS.</p><p class="indent-p">IAAPA hired industry veteran Ben Jones of RECreation Inc. to serve as the association’s first family entertainment center (FEC) specialist, dedicated solely to supplying outreach, support, and assistance to the association’s FEC community.</p><p class="indent-p">The association launched IAAPA News Flash, a daily e-mail compilation of industry news from around the world sent directly to members’ inboxes. Within a year it was published more than 125 days a year and was available in 11 languages.
@@ -116,20 +116,21 @@
       </div>
     </div>
 
-    <div class="timeline-block next">
-      <img src="img/year-bar/19.png" alt="">
-      <div class="timeline-content next" style="width:auto; height:auto; max-width:300px;">
+    <div class="timeline-block third">
+      <img src="img/year-bar/2009.png" alt="">
+      <div class="timeline-content third" style="width:auto; height:auto; max-width:300px;">
         <img class="timeline-img" src="img/year_photos/2009.png" alt="">
         <p class="" style="color:#696969; font-size:12px;"><strong>2009 |</strong>  The International Association for the Leisure and Entertainment Industry (IALEI), a trade association representing the FEC industry, reached an agreement to dissolve and merge its membership into IAAPA. Enhanced services to the FEC constituency included a dedicated staff member and an FEC internet portal.</p><p class="indent-p"> The association established the IAAPA Latin America regional office in Mexico City, with industry and association veteran Paulina Reyes as executive director.</p><p class="indent-p">IAAPA Europe launched the IAAPA Europe Insurance Program, completed the first European Economic Impact Study, and made the Ride Incident Reporting System mandatory for European members with qualified rides.</p><p class="indent-p">Enhanced training efforts through an online webinar series were part of the new Partnership Plus program on the website. Other website features included offering back issues of Funworld magazine and providing archives of handouts from expo educational sessions.
         </p><p class="indent-p">IAAPA Attractions Expo was held in Las Vegas as what was originally envisioned as a new East-West rotation of the Expo. Plans to return in 2011 were changed due to challenges with the facility, logistics, and costs, and IAAPA committed to remain in Orlando through 2019 (an agreement that has since been extended).
         </p>
       </div>
-    </div> -->
+    </div>
 
     <div class="timeline-year" style="height:30px; width:40px; margin-top:4px; background-color:white;">
-      <form ng-submit="vm.handleNext()">
-
+      <a id="next-decade" ui-sref ="Timeline10"><button type="button" name="text"><img src="img/next-slide-btn.png" style="width:40px; height:40px;" alt="">NEXT PAGE</button></a>
+      <form id="next-page" ng-submit="vm.handleNext()">
         <button ng-click="vm.handleNext()" type="button" name="text"><img src="img/next-slide-btn.png" style="width:40px; height:40px;" alt=""></button>
       </form>
     </div>
+  </div>
   </div>

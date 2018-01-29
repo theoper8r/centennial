@@ -8,7 +8,7 @@
   <a class ="timeline-links" ui-sref="Timeline6" ng-click="vm.setDecade(6); vm.navSelect(6)">1960s</a>
   <a class ="timeline-links" ui-sref="Timeline7" ng-click="vm.setDecade(7); vm.navSelect(7)">1970s</a>
   <a class ="timeline-links" ui-sref="Timeline8" ng-click="vm.setDecade(8); vm.navSelect(8)">1980s</a>
-  <a class ="timeline-links" ui-sref="Timeline9" ng-click="vm.setDecade(9); vm.navSelect(9)">1990s</a>
+  <a class ="timeline-links selectedNav" ui-sref="Timeline9" ng-click="vm.setDecade(9); vm.navSelect(9)">1990s</a>
   <a class ="timeline-links" ui-sref="Timeline10" ng-click="vm.setDecade(10); vm.navSelect(10)">2000s</a>
   <a class ="timeline-links" ui-sref="Timeline11" ng-click="vm.setDecade(11); vm.navSelect(11)">2010s</a>
 </div>
@@ -21,12 +21,12 @@
 
 <div class="timeline-container" style="">
   <div class="line-div">
-    <div class="timeline-year" style="height:30px; width:40px; margin-top:4px; background-color:white;">
-      <form ng-submit="vm.handlePrev()">
-
-        <button ng-click="vm.handlePrev()" type="button" name="text"><img src="img/prev-slide-btn.png" style="width:40px; height:40px;" alt=""></button>
-      </form>
-    </div>
+  <div class="timeline-year" style="height:30px; width:40px; margin-top:4px; background-color:white;">
+    <a id="prev-decade" ui-sref ="Timeline8"><button type="button" name="text"><img src="img/prev-slide-btn.png" style="width:40px; height:40px;" alt="">PREV PAGE</button></a>
+    <form id="prev-page" ng-submit="vm.handlePrev()">
+      <button ng-click="vm.handlePrev()" type="button" name="text"><img src="img/prev-slide-btn.png" style="width:40px; height:40px;" alt=""></button>
+    </form>
+  </div>
 
     <div class="timeline-block first">
       <img src="img/year-bar/1990.png" alt="">
@@ -103,28 +103,30 @@
       </div>
     </div>
 
-    <!-- <div class="timeline-block next">
-      <img src="img/year-bar/19.png" alt="">
-      <div class="timeline-content next" style="width:auto; height:auto; max-width:300px;">
+    <div class="timeline-block third">
+      <img src="img/year-bar/1998.png" alt="">
+      <div class="timeline-content third" style="width:auto; height:auto; max-width:300px;">
         <img class="timeline-img" src="img/year_photos/1998.png" alt="">
         <p class="" style="color:#696969; font-size:12px;"><strong>1998 |</strong>  IAAPA held a series of four Future of the Industry conferences in Canada, Argentina, Sweden, and Australia to allow members to learn about emerging trends that were impacting the industry. The seminars were intended to help in the development of the next strategic plan for the association.</p><p class="indent-p">The National Amusement Park Historical Association (NAPHA) partnered with IAAPA to launch an oral history project. NAPHA members completed about a dozen interviews that helped support a “Legends of the Industry” series in Funworld.</p><p class="indent-p">In an effort to increase IAAPA’s profile on a variety of issues important to the attractions industry, including safety, IAAPA attractions the role of public relations coordinator to focus on external communications and develop proactive relationships with the press. This marked the beginning of IAAPA’s multifaceted communications department.</p><p class="indent-p">The trade show in Dallas featured nearly 1,100 exhibitors across almost 500,000 net square feet of space, including 50,000 net square feet outside. Exhibitors were housed in two levels of exhibit halls, an arena, and a ballroom. It was evident the trade show had outgrown all but a handful of convention centers
         </p>
       </div>
     </div>
 
-    <div class="timeline-block next">
-      <img src="img/year-bar/19.png" alt="">
-      <div class="timeline-content next" style="width:auto; height:auto; max-width:300px;">
+    <div class="timeline-block third">
+      <img src="img/year-bar/1999.png" alt="">
+      <div class="timeline-content third" style="width:auto; height:auto; max-width:300px;">
         <img class="timeline-img" src="img/year_photos/1999.png" alt="">
         <p class="" style="color:#696969; font-size:12px;"><strong>1999 |</strong>  IAAPA added a membership committee and continued to expand its constituency groups by creating a zoo and aquarium committee.</p><p class="indent-p"> IAAPA launched Asian Amusement Management School, a three-day educational seminar with 40 hours of instruction covering human resources, safety, finance, and operations.</p><p class="indent-p">The 1999 conference and trade show in Atlanta broke 500,000 net square feet of exhibit space for the first time, including 45,000 net square feet in the Georgia Dome (taking the place of outdoor exhibits). The show also saw the debut of the IAAPA Big E awards to honor the best in live entertainment and the Spirit of Excellence Awards to recognize best human resources practices. Both of these programs were eventually merged into the IAAPA Brass Ring Awards program.</p><p class="indent-p">Rene Aziz of Mexico’s Grupo Magico became the first board chair from Latin America.
         </p>
       </div>
-    </div> -->
+    </div>
 
     <div class="timeline-year" style="height:30px; width:40px; margin-top:4px; background-color:white;">
-      <form ng-submit="vm.handleNext()">
+      <a id="next-decade" ui-sref ="Timeline10"><button type="button" name="text"><img src="img/next-slide-btn.png" style="width:40px; height:40px;" alt="">NEXT PAGE</button></a>
 
+      <form id="next-page" ng-submit="vm.handleNext()">
         <button ng-click="vm.handleNext()" type="button" name="text"><img src="img/next-slide-btn.png" style="width:40px; height:40px;" alt=""></button>
       </form>
     </div>
+  </div>
   </div>

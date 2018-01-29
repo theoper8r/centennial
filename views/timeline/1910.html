@@ -1,6 +1,6 @@
 <div style="display:flex; justify-content:space-between; width:80%; margin:auto; margin-top:40px;">
   <a class ="timeline-links" ui-sref="Timeline0" ng-click="vm.setDecade(0); vm.navSelect(0)">1900s</a>
-  <a class ="timeline-links" ui-sref="Timeline1" ng-click="vm.setDecade(1); vm.navSelect(1)" >1910s</a>
+  <a class ="timeline-links selectedNav" ui-sref="Timeline1" ng-click="vm.setDecade(1); vm.navSelect(1)" >1910s</a>
   <a class ="timeline-links" ui-sref="Timeline2" ng-click="vm.setDecade(2); vm.navSelect(2)">1920s</a>
   <a class ="timeline-links" ui-sref="Timeline3" ng-click="vm.setDecade(3); vm.navSelect(3)">1930s</a>
   <a class ="timeline-links" ui-sref="Timeline4" ng-click="vm.setDecade(4); vm.navSelect(4)">1940s</a>
@@ -23,8 +23,8 @@
 <div class="timeline-container" style="">
   <div class="line-div">
     <div class="timeline-year" style="height:30px; width:40px; margin-top:4px; background-color:white;">
-      <form ng-submit="vm.handlePrev()">
-
+      <a id="prev-decade" ui-sref ="Timeline0"><button type="button" name="text"><img src="img/prev-slide-btn.png" style="width:40px; height:40px;" alt="">PREV PAGE</button></a>
+      <form id="prev-page" ng-submit="vm.handlePrev()">
         <button ng-click="vm.handlePrev()" type="button" name="text"><img src="img/prev-slide-btn.png" style="width:40px; height:40px;" alt=""></button>
       </form>
     </div>
@@ -70,8 +70,9 @@
     </div>
 
     <div class="timeline-year" style="height:30px; width:40px; margin-top:4px; background-color:white;">
-      <form ng-submit="vm.handleNext()">
+      <a id="next-decade" ui-sref ="Timeline2"><button type="button" name="text"><img src="img/next-slide-btn.png" style="width:40px; height:40px;" alt="">NEXT PAGE</button></a>
 
+      <form id="next-page" ng-submit="vm.handleNext()">
         <button ng-click="vm.handleNext()" type="button" name="text"><img src="img/next-slide-btn.png" style="width:40px; height:40px;" alt=""></button>
       </form>
     </div>

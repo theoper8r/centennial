@@ -4,7 +4,7 @@
   <a class ="timeline-links" ui-sref="Timeline2" ng-click="vm.setDecade(2); vm.navSelect(2)">1920s</a>
   <a class ="timeline-links" ui-sref="Timeline3" ng-click="vm.setDecade(3); vm.navSelect(3)">1930s</a>
   <a class ="timeline-links" ui-sref="Timeline4" ng-click="vm.setDecade(4); vm.navSelect(4)">1940s</a>
-  <a class ="timeline-links" ui-sref="Timeline5" ng-click="vm.setDecade(5); vm.navSelect(5)">1950s</a>
+  <a class ="timeline-links selectedNav" ui-sref="Timeline5" ng-click="vm.setDecade(5); vm.navSelect(5)">1950s</a>
   <a class ="timeline-links" ui-sref="Timeline6" ng-click="vm.setDecade(6); vm.navSelect(6)">1960s</a>
   <a class ="timeline-links" ui-sref="Timeline7" ng-click="vm.setDecade(7); vm.navSelect(7)">1970s</a>
   <a class ="timeline-links" ui-sref="Timeline8" ng-click="vm.setDecade(8); vm.navSelect(8)">1980s</a>
@@ -22,12 +22,12 @@
 
 <div class="timeline-container" style="">
   <div class="line-div">
-    <div class="timeline-year" style="height:30px; width:40px; margin-top:4px; background-color:white;">
-      <form ng-submit="vm.handlePrev()">
-
-        <button ng-click="vm.handlePrev()" type="button" name="text"><img src="img/prev-slide-btn.png" style="width:40px; height:40px;" alt=""></button>
-      </form>
-    </div>
+  <div class="timeline-year" style="height:30px; width:40px; margin-top:4px; background-color:white;">
+    <a id="prev-decade" ui-sref ="Timeline4"><button type="button" name="text"><img src="img/prev-slide-btn.png" style="width:40px; height:40px;" alt="">PREV PAGE</button></a>
+    <form id="prev-page" ng-submit="vm.handlePrev()">
+      <button ng-click="vm.handlePrev()" type="button" name="text"><img src="img/prev-slide-btn.png" style="width:40px; height:40px;" alt=""></button>
+    </form>
+  </div>
 
     <div class="timeline-block first">
       <img src="img/year-bar/1950.png" alt="">
@@ -103,9 +103,11 @@
     </div>
 
     <div class="timeline-year" style="height:30px; width:40px; margin-top:4px; background-color:white;">
-      <form ng-submit="vm.handleNext()">
+      <a id="next-decade" ui-sref ="Timeline6"><button type="button" name="text"><img src="img/next-slide-btn.png" style="width:40px; height:40px;" alt="">NEXT PAGE</button></a>
 
+      <form id="next-page" ng-submit="vm.handleNext()">
         <button ng-click="vm.handleNext()" type="button" name="text"><img src="img/next-slide-btn.png" style="width:40px; height:40px;" alt=""></button>
       </form>
     </div>
+  </div>
   </div>

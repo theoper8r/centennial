@@ -6,7 +6,7 @@
   <a class ="timeline-links" ui-sref="Timeline4" ng-click="vm.setDecade(4); vm.navSelect(4)">1940s</a>
   <a class ="timeline-links" ui-sref="Timeline5" ng-click="vm.setDecade(5); vm.navSelect(5)">1950s</a>
   <a class ="timeline-links" ui-sref="Timeline6" ng-click="vm.setDecade(6); vm.navSelect(6)">1960s</a>
-  <a class ="timeline-links" ui-sref="Timeline7" ng-click="vm.setDecade(7); vm.navSelect(7)">1970s</a>
+  <a class ="timeline-links selectedNav" ui-sref="Timeline7" ng-click="vm.setDecade(7); vm.navSelect(7)">1970s</a>
   <a class ="timeline-links" ui-sref="Timeline8" ng-click="vm.setDecade(8); vm.navSelect(8)">1980s</a>
   <a class ="timeline-links" ui-sref="Timeline9" ng-click="vm.setDecade(9); vm.navSelect(9)">1990s</a>
   <a class ="timeline-links" ui-sref="Timeline10" ng-click="vm.setDecade(10); vm.navSelect(10)">2000s</a>
@@ -22,12 +22,12 @@
 
 <div class="timeline-container" style="">
   <div class="line-div">
-    <div class="timeline-year" style="height:30px; width:40px; margin-top:4px; background-color:white;">
-      <form ng-submit="vm.handlePrev()">
-
-        <button ng-click="vm.handlePrev()" type="button" name="text"><img src="img/prev-slide-btn.png" style="width:40px; height:40px;" alt=""></button>
-      </form>
-    </div>
+  <div class="timeline-year" style="height:30px; width:40px; margin-top:4px; background-color:white;">
+    <a id="prev-decade" ui-sref ="Timeline6"><button type="button" name="text"><img src="img/prev-slide-btn.png" style="width:40px; height:40px;" alt="">PREV PAGE</button></a>
+    <form id="prev-page" ng-submit="vm.handlePrev()">
+      <button ng-click="vm.handlePrev()" type="button" name="text"><img src="img/prev-slide-btn.png" style="width:40px; height:40px;" alt=""></button>
+    </form>
+  </div>
 
     <div class="timeline-block first">
       <img src="img/year-bar/1970.png" alt="">
@@ -101,19 +101,21 @@
       </div>
     </div>
 
-    <!-- <div class="timeline-block next">
-      <img src="img/year-bar/19.png" alt="">
-      <div class="timeline-content next" style="width:auto; height:auto; max-width:300px;">
-        <img class="timeline-img" src="img/year_photos/1978.png" alt="">
-        <p class="" style="color:#696969; font-size:12px;">1979 |  IAAPA spent much of the year fighting U.S. Department of Energy proposals for a federal energy conservation plan that included gasoline rationing and limits on weekend driving. Gary Wachs of Taft Amusement Park Group represented IAAPA in testimonyat the House Subcommittee on Energy and Power.The trade show hit 400 exhibitors, including 143 new companies, occupying 92,000 square feet of exhibit space—79,000 inside and13,000 outside.Truman Woodworth assumed the role as chairman. Having worked with Disney, Cedar Point, and Marriott, he was the first chairman who primarily worked for corporate theme parks
+    <div class="timeline-block third">
+      <img src="img/year-bar/1979.png" alt="">
+      <div class="timeline-content third" style="width:auto; height:auto; max-width:300px;">
+        <img class="timeline-img" src="img/year_photos/1979.png" alt="">
+        <p class="" style="color:#696969; font-size:12px;">1979 |  IAAPA spent much of the year fighting U.S. Department of Energy proposals for a federal energy conservation plan that included gasoline rationing and limits on weekend driving. Gary Wachs of Taft Amusement Park Group represented IAAPA in testimony at the House Subcommittee on Energy and Power.</p><p class="indent-p">The trade show hit 400 exhibitors, including 143 new companies, occupying 92,000 square feet of exhibit space—79,000 inside and 13,000 outside.</p><p class="indent-p">Truman Woodworth assumed the role as chairman. Having worked with Disney, Cedar Point, and Marriott, he was the first chairman who primarily worked for corporate theme parks
         </p>
       </div>
-    </div> -->
+    </div>
 
     <div class="timeline-year" style="height:30px; width:40px; margin-top:4px; background-color:white;">
-      <form ng-submit="vm.handleNext()">
+      <a id="next-decade" ui-sref ="Timeline8"><button type="button" name="text"><img src="img/next-slide-btn.png" style="width:40px; height:40px;" alt="">NEXT PAGE</button></a>
 
+      <form id="next-page" ng-submit="vm.handleNext()">
         <button ng-click="vm.handleNext()" type="button" name="text"><img src="img/next-slide-btn.png" style="width:40px; height:40px;" alt=""></button>
       </form>
     </div>
   </div>
+</div>
