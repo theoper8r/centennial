@@ -3,10 +3,7 @@ angular.module('centennial')
   '$resource',
   eraFactory
 ])
-// .factory('SearchFactory', [
-//   '$resource',
-//   SearchFactory
-// ])
+
 
 function eraFactory($resource) {
   // return $resource('/api/eras', null, {

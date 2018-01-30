@@ -1,8 +1,13 @@
 // console.log('linked')
 /* global angular */
+
+// var centennial = angular.module('centennial', ['ui.router',
+// 'ngResource'])
+
  angular.module('centennial', [
   'ui.router',
-  'ngResource'
+  'ngResource',
+  'ngRoute'
 ])
 .config([
   '$stateProvider',
@@ -21,48 +26,50 @@ function Router($stateProvider, $urlRouterProvider, $locationProvider) {
   // });
   // $locationProvider.html5Mode(true)
 
+  $locationProvider.hashPrefix('')
+
   $stateProvider
   .state('Home', {
     url: '/',
-    templateUrl: 'views/home.html'
+    templateUrl: 'assets/views/home.html'
   })
   .state('About', {
     url: '/about',
-    templateUrl: 'views/about.html'
+    templateUrl: 'assets/views/about.html'
   })
   .state('Timeline0', {
     url: '/timeline0',
-    templateUrl: 'views/timeline/1900.html',
+    templateUrl: 'assets/views/timeline/1900.html',
     controller: 'eraIndex',
     controllerAs: 'vm'
   })
   .state('Timeline1', {
     url: '/timeline1',
-    templateUrl: 'views/timeline/1910.html',
+    templateUrl: './views/timeline/1910.html',
     controller: 'eraIndex',
     controllerAs: 'vm'
   })
   .state('Timeline2', {
     url: '/timeline2',
-    templateUrl: 'views/timeline/1920.html',
+    templateUrl: './views/timeline/1920.html',
     controller: 'eraIndex',
     controllerAs: 'vm'
   })
   .state('Timeline3', {
     url: '/timeline3',
-    templateUrl: 'views/timeline/1930.html',
+    templateUrl: './views/timeline/1930.html',
     controller: 'eraIndex',
     controllerAs: 'vm'
   })
   .state('Timeline4', {
     url: '/timeline4',
-    templateUrl: 'views/timeline/1940.html',
+    templateUrl: './views/timeline/1940.html',
     controller: 'eraIndex',
     controllerAs: 'vm'
   })
   .state('Timeline5', {
     url: '/timeline5',
-    templateUrl: 'views/timeline/1950.html',
+    templateUrl: './views/timeline/1950.html',
     controller: 'eraIndex',
     controllerAs: 'vm'
   })
@@ -104,11 +111,11 @@ function Router($stateProvider, $urlRouterProvider, $locationProvider) {
   })
   .state('Leaders', {
     url: '/leaders',
-    templateUrl: 'views/leaders.html'
+    templateUrl: './views/leaders.html'
   })
   .state('Stories', {
     url: '/stories',
-    templateUrl: 'views/stories.html'
+    templateUrl: './views/stories.html'
   })
   .state('History', {
     url: '/history',
