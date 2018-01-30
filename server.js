@@ -1,8 +1,12 @@
 const express        = require('express');
+const http           = require('http')
+const cors           = require('cors')
 const app            = express();
 const bodyParser     = require('body-parser');
+const logger         = require('morgan')
+// const angular        = require('angular')
 // const methodOverride = require('method-override');
-// const path = require('path')
+const path = require('path')
 // const favicon = require('serve-favicon')
 // const logger = require('morgan')
 // const cookieParser = require('cookie-parser')
@@ -12,15 +16,16 @@ require('./db/connection.js')
 
 
 app.set('port', process.env.PORT || 27017)
-// app.use('/assets', express.static('public'))
-// app.use('/node_modules', express.static('node_modules'))
+// app.use(express.static(__dirname + '/public'));
+app.use('/node_modules', express.static('node_modules'))
+app.use('/assets', express.static('public'))
 // app.use(logger('dev'))
 // app.use(cookieParser())
 app.use(bodyParser.json({extended:true}))
 
 
-// app.set('views', path.join(__dirname, 'views'));
-// app.set('view engine', 'jade')
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'jade')
 
 app.get('/api/eras', (req, res) => {
   Era.find({}).then((eras) => {
@@ -44,3 +49,5 @@ app.get('/*', (req, res) => {
 app.listen(app.get('port'), () => {
   console.log(`Listening on ${app.get('port')}`)
 })
+
+module.exports = app

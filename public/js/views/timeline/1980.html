@@ -1,0 +1,128 @@
+<div style="display:flex; justify-content:space-between; width:80%; margin:auto; margin-top:40px;">
+  <a class ="timeline-links" ui-sref="Timeline0" ng-click="vm.setDecade(0); vm.navSelect(0)">1900s</a>
+  <a class ="timeline-links" ui-sref="Timeline1" ng-click="vm.setDecade(1); vm.navSelect(1)" >1910s</a>
+  <a class ="timeline-links" ui-sref="Timeline2" ng-click="vm.setDecade(2); vm.navSelect(2)">1920s</a>
+  <a class ="timeline-links" ui-sref="Timeline3" ng-click="vm.setDecade(3); vm.navSelect(3)">1930s</a>
+  <a class ="timeline-links" ui-sref="Timeline4" ng-click="vm.setDecade(4); vm.navSelect(4)">1940s</a>
+  <a class ="timeline-links" ui-sref="Timeline5" ng-click="vm.setDecade(5); vm.navSelect(5)">1950s</a>
+  <a class ="timeline-links" ui-sref="Timeline6" ng-click="vm.setDecade(6); vm.navSelect(6)">1960s</a>
+  <a class ="timeline-links" ui-sref="Timeline7" ng-click="vm.setDecade(7); vm.navSelect(7)">1970s</a>
+  <a class ="timeline-links selectedNav" ui-sref="Timeline8" ng-click="vm.setDecade(8); vm.navSelect(8)">1980s</a>
+  <a class ="timeline-links" ui-sref="Timeline9" ng-click="vm.setDecade(9); vm.navSelect(9)">1990s</a>
+  <a class ="timeline-links" ui-sref="Timeline10" ng-click="vm.setDecade(10); vm.navSelect(10)">2000s</a>
+  <a class ="timeline-links" ui-sref="Timeline11" ng-click="vm.setDecade(11); vm.navSelect(11)">2010s</a>
+</div>
+
+<div class ="intro-div">
+  <p class="page-heads" style="text-align:left; margin-left:-3px; letter-spacing:0px;">Putting the “I” in IAAPA</p>
+    <p style="font-size:14px; margin-top:-34px; color:#696969;">As the 1980s dawned, the industry in North America was maturing. The opening of Canada’s Wonderland outside Toronto, Canada, in 1981 signaled the end of the theme park boom—the result of increasing costs and market saturation. Similar factors also ended the rollercoaster arms race with the completion of the “American Eagle” at Marriott’s Great America, north of Chicago. Instead, it was the decade of water attractions. New innovations like river rapids and “spillwater” rides using giant, multipassenger boats became industry staples, while the nascent water park industry spread throughout the United States. In 1982, Carowinds, uniquely positioned on the border of North and South Carolina, opened the “Ocean Island” wave pool. For an additional $3, guests could enter the water park. In 1983, Geauga Lake in Aurora, Ohio, became the first park to offer both a water park and amusement park for one single admission price, now an industry staple. Technology also began to play a greater role, with simulator attractions becoming popular.
+    </p><p class="indent-p"> Globally, the industry began to spread. Tokyo Disneyland opened to huge crowds, signaling the arrival of American-style theme parks in international markets and driving the globalization of the industry. Other developers attempted to bring modern theme parks to China and India with mixed success, while the industry in Europe grew in scale and sophistication.
+  </p>
+</div>
+
+<div class="timeline-container" style="">
+  <div class="line-div">
+  <div class="timeline-year" style="height:30px; width:40px; margin-top:4px; background-color:white;">
+    <a id="prev-decade" ui-sref ="Timeline7"><button type="button" name="text"><img src="/assets/img/prev-slide-btn.png" style="width:40px; height:40px;" alt=""></button></a>
+    <form id="prev-page" ng-submit="vm.handlePrev()">
+      <button ng-click="vm.handlePrev()" type="button" name="text"><img src="/assets/img/prev-slide-btn.png" style="width:40px; height:40px;" alt=""></button>
+    </form>
+  </div>
+
+    <div class="timeline-block first">
+      <img src="/assets/img/year-bar/1980.png" alt="">
+      <div class="timeline-content" style="width:auto; height:auto; max-width:300px;">
+        <img class="timeline-img" src="/assets/img/year_photos/1980.png" alt="">
+        <p style="color:#696969; font-size:14px;"><strong>1980 |</strong>  Marion Knott of Knott’s Berry Farm became the first female member of the IAAPA Board of Directors.</p><p class="indent-p"> With U.S. government regulations becoming an increasing threat to the industry, IAAPA opened an office in Washington, D.C., to strengthen relations with the federal government. John Graff was hired as legal counsel. A former legislative staffer, Graff was introduced to the industry as an attorney for Marriott Corp. when the company was developing the Great America theme parks.
+        </p>
+      </div>
+    </div>
+
+    <div class="timeline-block first">
+      <img src="/assets/img/year-bar/1981.png" alt="">
+      <div class="timeline-content" style="width:auto; height:auto; max-width:300px;">
+        <p style="color:#696969; font-size:14px;"><strong>1981 |</strong>  IAAPA President Paul Serff announced the association would focus on increasing services to international members, which accounted for 20 percent of the membership. More than 500 registrants from outside the U.S. participated in the association’s first International Reception at the convention.
+        </p>
+      </div>
+    </div>
+
+    <div class="timeline-block first">
+      <img src="/assets/img/year-bar/1982.png" alt="">
+      <div class="timeline-content" style="width:auto; height:auto; max-width:300px;">
+        <p style="color:#696969; font-size:14px;"><strong>1982 |</strong>  IAAPA purchased a new headquarters building in Wood Dale, Illinois, and participated in the Schausteller International Trade Fair in Dusseldorf, Germany.</p><p class="indent-p">After several years of development, the Operations Procedures for Amusement Rides were approved by ASTM F-24 Committee. Work continued on procedures for maintenance and safety standards.
+        </p>
+      </div>
+    </div>
+
+    <div class="timeline-block first">
+      <img src="/assets/img/year-bar/1983.png" alt="">
+      <div class="timeline-content" style="width:auto; height:auto; max-width:300px;">
+        <img class="timeline-img" src="/assets/img/year_photos/1983.png" alt="">
+        <p style="color:#696969; font-size:14px;"><strong>1983 |</strong>  IAAPA announced a staff restructuring in which John Graff would take over as executive director effective Jan. 1, 1984, replacing Bob Blundred, who would remain in an advisory position until his retirement.
+        </p>
+      </div>
+    </div>
+
+    <div class="timeline-block next">
+      <img src="/assets/img/year-bar/1984.png" alt="">
+      <div class="timeline-content next" style="width:auto; height:auto; max-width:300px;">
+        <p class="" style="color:#696969; font-size:14px;"><strong>1984 |</strong>  IAAPA President Scott McDonald of Pennsylvania’s Idlewild Park attended the International Trade Show in Hamburg, Germany, where he hosted a reception for European members. During an interview with Amusement Business, McDonald said participating in overseas trade shows was a step toward IAAPA eventually holding its own shows outside the United States.</p><p class="indent-p"> IAAPA held its first Government Affairs Seminar in 1984, and the 87 participants attended sessions with representatives of the legislative and executive branch along with visits to attendees’ congressional delegations. IAAPA designated August as Amusement Park Month, and members coordinated promotional activities.</p><p class="indent-p">The ASTM F-24 Committee adopted its policy on maintenance and safety standards.
+        </p>
+      </div>
+    </div>
+
+    <div class="timeline-block next">
+      <img src="/assets/img/year-bar/1985.png" alt="">
+      <div class="timeline-content next" style="width:auto; height:auto; max-width:300px;">
+        <img class="timeline-img" src="/assets/img/year_photos/1985.png" alt="">
+        <p class="" style="color:#696969; font-size:14px;"><strong>1985 |</strong>  IAAPA representatives attended trade shows in Germany (Show Aktuell in Munich) and England (Amusement Trades Exhibition International in London).</p><p class="indent-p">The IAAPA Board of Directors voted at the March meeting to close the headquarters in Chicago, where it had been since 1920, and combine it with the office in the Washington, D.C., area. At the time, the staff consisted of eight people.</p><p class="indent-p">IAAPA’s flagship publication Funworld magazine launched, replacing ActionNews, which debuted several years earlier.</p><p class="indent-p">IAAPA retained the Stanford Research Institute to prepare an impact report on the industry to determine its economic and social impact including employment, payroll, taxes paid, and goods and services purchased
+        </p>
+      </div>
+    </div>
+
+    <div class="timeline-block next">
+      <img src="/assets/img/year-bar/1986.png" alt="">
+      <div class="timeline-content next" style="width:auto; height:auto; max-width:300px;">
+        <img class="timeline-img" src="/assets/img/year_photos/1986.png" alt="">
+        <p class="" style="color:#696969; font-size:14px;"><strong>1986 |</strong>  At the invitation of the Chinese government, a delegation of 34 IAAPA members from five nations toured China in April. They visited a dozen attractions and attended Amusement Expo ’86 in Beijing, the first trade show in the emerging market. The delegation recognized Dong Fang Amusement Park in Guangzhou as China’s first IAAPA member.</p><p class="indent-p"> IAAPA contracted with the U.S. Travel Data Center to conduct a survey on amusement park visitation patterns. According to the study, an estimated 235 million Americans planned to visit an amusement park during 1986, 15 percent more than the previous year.It also revealed 53 percent of Americans planned to visit amusement parks an average of 1.9 times, while one-fourth of all vacation trips will include a visit to an amusement park.</p><p class="indent-p">The first IAAPA Strategic Planning Committee was formed. Chaired by Michael Jenkins with Leisure and Recreation Concepts, the committee recommended an increase in educational training programs, particularly with regional seminars.  The committee also prioritized increased international representation in the organization, leading to the establishment of the International Council. The council, comprising park associations from outside the United States, could appoint two voting members to the IAAPA board.
+        </p><p class="indent-p"> IAAPA also created the Allied Council to give exhibitors a voice in the organization. Comprising allied industry groups such as the American Recreational Equipment Association (AREA), the International Association of Fairs and Expositions (IAFE), the Showmen’s League of America (SLA), and the World Waterpark Association (WWA), the council was able to appoint a member to the IAAPA Advisory Board. Today, the IAAPA Advisory Board is made up of all the former living chairmen.</p><p class="indent-p">A captive insurance company sanctioned by IAAPA called “Attractions Insurance Co.” began addressing problems with availability and cost of insurance.</p><p class="indent-p">The trade show was held in Orlando for the first time at the Orange County Convention and Civic Center. Registration was a record 13,591. Demand for space among the 501 exhibitors meant 40 percent of the companies had to be housed in tents. The convention also featured the first Thursday night social at an attraction—“An Evening at SeaWorld”—and the debut of the IAAPA Brass Ring Awards, which recognized creativity and excellence in marketing and advertising.
+        </p>
+      </div>
+    </div>
+
+    <div class="timeline-block next">
+      <img src="/assets/img/year-bar/1987.png" alt="">
+      <div class="timeline-content next" style="width:auto; height:auto; max-width:300px;">
+        <img class="timeline-img" src="/assets/img/year_photos/1987.png" alt="">
+        <p class="" style="color:#696969; font-size:14px;"><strong>1987 |</strong>  IAAPA Summer Meeting in Phantasialand
+        </p>
+      </div>
+    </div>
+
+    <div class="timeline-block third">
+      <img src="/assets/img/year-bar/1988.png" alt="">
+      <div class="timeline-content third" style="width:auto; height:auto; max-width:300px;">
+        <p class="" style="color:#696969; font-size:14px;"><strong>1988 |</strong>  Seeking to address the needs of additional constituencies, IAAPA formally invited miniature-golf courses and family entertainment centers into the membership of the association.
+        </p>
+      </div>
+    </div>
+
+    <div class="timeline-block third">
+      <img src="/assets/img/year-bar/1989.png" alt="">
+      <div class="timeline-content third" style="width:auto; height:auto; max-width:300px;">
+        <p class="" style="color:#696969; font-size:14px;"><strong>1989 |</strong>  It was a year of international engagement. IAAPA focused on affiliating with foreign associations, including those in Germany, Mexico, South America, and Japan, and sent a delegation to Brazil to attend the inaugural meeting of ADIBRA (the Brazilian Association of Amusement Parks). During the convention, workshops were translated into Spanish, French, German, and Japanese, while a delegation from the Soviet Union attended the convention. Several Soviet attendees joined, bringing the number of member countries in IAAPA to 51. Membership surpassed 2,000 for the first time, driven by a 35 percent jump in international membership.</p><p class="indent-p">The first managers and owners luncheon was held at the convention, with Jay Stein of Universal Studios as keynote speaker. It was the predecessor to today’s GM and Owners’ Breakfast at IAAPA Attractions Expo.
+        </p>
+      </div>
+    </div>
+
+
+
+    <div class="timeline-year" style="height:30px; width:40px; margin-top:4px; background-color:white;">
+      <a id="next-decade" ui-sref ="Timeline9"><button type="button" name="text"><img src="/assets/img/next-slide-btn.png" style="width:40px; height:40px;" alt=""></button></a>
+
+      <form id="next-page" ng-submit="vm.handleNext()">
+        <button ng-click="vm.handleNext()" type="button" name="text"><img src="/assets/img/next-slide-btn.png" style="width:40px; height:40px;" alt=""></button>
+      </form>
+    </div>
+  </div>
+  </div>

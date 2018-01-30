@@ -1,0 +1,117 @@
+<div style="display:flex; justify-content:space-between; width:80%; margin:auto; margin-top:40px;">
+  <a class ="timeline-links" ui-sref="Timeline0" ng-click="vm.setDecade(0); vm.navSelect(0)">1900s</a>
+  <a class ="timeline-links" ui-sref="Timeline1" ng-click="vm.setDecade(1); vm.navSelect(1)" >1910s</a>
+  <a class ="timeline-links" ui-sref="Timeline2" ng-click="vm.setDecade(2); vm.navSelect(2)">1920s</a>
+  <a class ="timeline-links" ui-sref="Timeline3" ng-click="vm.setDecade(3); vm.navSelect(3)">1930s</a>
+  <a class ="timeline-links" ui-sref="Timeline4" ng-click="vm.setDecade(4); vm.navSelect(4)">1940s</a>
+  <a class ="timeline-links" ui-sref="Timeline5" ng-click="vm.setDecade(5); vm.navSelect(5)">1950s</a>
+  <a class ="timeline-links" ui-sref="Timeline6" ng-click="vm.setDecade(6); vm.navSelect(6)">1960s</a>
+  <a class ="timeline-links selectedNav" ui-sref="Timeline7" ng-click="vm.setDecade(7); vm.navSelect(7)">1970s</a>
+  <a class ="timeline-links" ui-sref="Timeline8" ng-click="vm.setDecade(8); vm.navSelect(8)">1980s</a>
+  <a class ="timeline-links" ui-sref="Timeline9" ng-click="vm.setDecade(9); vm.navSelect(9)">1990s</a>
+  <a class ="timeline-links" ui-sref="Timeline10" ng-click="vm.setDecade(10); vm.navSelect(10)">2000s</a>
+  <a class ="timeline-links" ui-sref="Timeline11" ng-click="vm.setDecade(11); vm.navSelect(11)">2010s</a>
+</div>
+
+
+<div class ="intro-div">
+  <p class="page-heads" style="text-align:left; margin-left:-3px; letter-spacing:0px;">Entering a 'World of Fun'</p>
+    <p style="font-size:14px; margin-top:-34px; color:#696969;">As the 1970s dawned, the industry was vastly different than the one that existed just a decade before. Since the early 1900s, large inner-city amusement parks, in most cases owned by families, dominated the industry. Those attractions included places such as Chicago’s Riverview, Cleveland’s Euclid Beach, Coney Island’s Steeplechase, New Jersey’s Palisades, and Fontaine Ferry in Louisville, Kentucky. But at this time, most were closing throughout the United States. They were victims of rising property values, urban decay and unrest, aging facilities, and ownership succession challenges. As the facilities closed, the families who were once the leaders of the industry also exited, creating openings for a new generation of leaders. New facilities such as Walt Disney World in Orlando, Kings Island in Cincinnati, Ohio, Magic Mountain near Los Angeles, and Great Adventure in Jackson, New Jersey, became the new industry anchors. Theme parks began to spread around the globe with the debut of places like Europa-Park and the Walibi chain in Europe, Ocean Park in Asia, and Dreamworld in Australia. And as theme parks spread, they rediscovered the timeless appeal of the roller coaster, and the industry found itself in the throes of a roller coaster arms race not seen since the 1920s. A race to build the tallest and fastest coaster grabbedheadlines, while innovation led to a new generation of looping roller coasters.
+  </p>
+</div>
+
+<div class="timeline-container" style="">
+  <div class="line-div">
+  <div class="timeline-year" style="height:30px; width:40px; margin-top:4px; background-color:white;">
+    <a id="prev-decade" ui-sref ="Timeline6"><button type="button" name="text"><img src="/assets/img/prev-slide-btn.png" style="width:40px; height:40px;" alt=""></button></a>
+    <form id="prev-page" ng-submit="vm.handlePrev()">
+      <button ng-click="vm.handlePrev()" type="button" name="text"><img src="/assets/img/prev-slide-btn.png" style="width:40px; height:40px;" alt=""></button>
+    </form>
+  </div>
+
+    <div class="timeline-block first">
+      <img src="/assets/img/year-bar/1970.png" alt="">
+      <div class="timeline-content" style="width:auto; height:auto; max-width:300px;">
+        <p style="color:#696969; font-size:14px;"><strong>1970 |</strong>   After a proposed tour fizzled in 1961, IAAP leaders toured Asia. More than 70 participants visited Expo ’70 in Osaka and toured parks in Tokyo, Taiwan, Hong Kong, Singapore, Bangkok, and Manila.
+        </p>
+      </div>
+    </div>
+
+    <div class="timeline-block first">
+      <img src="/assets/img/year-bar/1971.png" alt="">
+      <div class="timeline-content" style="width:auto; height:auto; max-width:300px;">
+        <img class="timeline-img" src="/assets/img/year_photos/1971.png" alt="">
+        <p style="color:#696969; font-size:14px;"><strong>1971 |</strong>  More than 60 IAAP members toured Europe, visiting Tivoli Gardens, Oktoberfest, Paris, Amsterdam, Vienna, Rome, Barcelona, and Madrid.</p><p class="indent-p">The IAFE decided to hold its annual convention in Las Vegas, splitting with IAAP for the first time in decades. IAAP affirmed it would remain at the Sherman House, despite increasing concerns about the condition of the hotel and Chicago’s December weather.</p><p class="indent-p"> The IAAP convention attracted 150 exhibitors and more than 6,000 registrants, including attendees from Greece, South America, Australia, Italy, Germany, England, and South Africa.
+        </p>
+      </div>
+    </div>
+
+    <div class="timeline-block first">
+      <img src="/assets/img/year-bar/1972.png" alt="">
+      <div class="timeline-content" style="width:auto; height:auto; max-width:300px;">
+        <img class="timeline-img" src="/assets/img/year_photos/1972.png" alt="">
+        <p style="color:#696969; font-size:14px;"><strong>1972 |</strong>  Former park owner Jack Singhiser was appointed by IAAP to lead a roving recruiting committee. Singhiser spent the year traveling the country recruiting new members with a focus on building the base of attractions members. He continued in the role for several years and helped increase membership by 25 percent by 1975.</p><p class="indent-p"> Three hundred thirty-five people attended the Summer Meeting at the new Walt Disney World Resort in Orlando.</p><p class="indent-p">To avoid conflicts with IAFE, IAAP moved its convention to mid-November, a date that continues.</p><p class="indent-p">Reflecting a broadening membership base, IAAP changed its name to the International Association of Amusement Parks and Attractions (IAAPA).
+        </p>
+      </div>
+    </div>
+
+    <div class="timeline-block first">
+      <img src="/assets/img/year-bar/1973.png" alt="">
+      <div class="timeline-content" style="width:auto; height:auto; max-width:300px;">
+        <p style="color:#696969; font-size:14px;"><strong>1973 |</strong>  IAAPA participated in Forain Expo in Paris—the international biennial exposition for equipment for fairs, festivals, vending, and gambling machines.</p><p class="indent-p">Confirming longstanding rumors, on Feb. 2, 1973, the Sherman House, the longtime home of the annual convention and trade show, closed. IAAPA soon announced the 1973 convention would be held in Atlanta. Demand for exhibit space in Atlanta prompted the hotel to convert a portion of the parking garage into any auxiliary hall, bringing in space heaters and a temporary snack bar to accommodate 59 additional booths. In the end, 341 booths were rented, 89 more than in the previous year. A ballroom was even pressed into service as annex space.
+        </p>
+      </div>
+    </div>
+
+    <div class="timeline-block next">
+      <img src="/assets/img/year-bar/1975.png" alt="">
+      <div class="timeline-content next" style="width:auto; height:auto; max-width:300px;">
+        <p class="" style="color:#696969; font-size:14px;"><strong>1975 |</strong>  IAAPA teamed with the Discover America Travel Organizations (DATO) to host the first National Attractions Seminar, held Feb. 23-26 in Lake Buena Vista, Florida. The 165 registrants hailed from all segments of the outdoor recreation industry, including amusement and theme parks, natural attractions, commercial carriers, state tourism commissions, regional attraction associations, advertising agencies, and trade periodicals in an attempt for a broad base of tourism operators to come together. The seminar only lasted a few years.</p><p class="indent-p">With the gas crisis looming in the United States, the IAAPA Board of Directors passed a resolution against gas rationing.</p><p class="indent-p">IAAPA had members in 18 countries in 1975.
+        </p>
+      </div>
+    </div>
+
+    <div class="timeline-block next">
+      <img src="/assets/img/year-bar/1976.png" alt="">
+      <div class="timeline-content next" style="width:auto; height:auto; max-width:300px;">
+        <img class="timeline-img" src="/assets/img/year_photos/1976.png" alt="">
+        <p class="" style="color:#696969; font-size:14px;"><strong>1976 |</strong> The convention was moved to the Rivergate in New Orleans, the first time the expo was held in a convention center. Three hundred ten exhibitors booked nearly 600 booths, and attendance reached a record 7,156.
+        </p>
+      </div>
+    </div>
+
+    <div class="timeline-block next">
+      <img src="/assets/img/year-bar/1977.png" alt="">
+      <div class="timeline-content next" style="width:auto; height:auto; max-width:300px;">
+        <p class="" style="color:#696969; font-size:14px;"><strong>1977 |</strong>  Continuing its growing slate of international tours, IAAPA visited Central and South America.</p><p class="indent-p">IAAPA contracted with the Wharton School at the University of Pennsylvania to conduct an impact report on the industry. Key findings revealed the North American industry generated gross revenue in 1976 of $1.3 billion, attendance was estimated at 170 million, advertising expenditures were $95 million, and capital expenditures totaled $300 million.</p><p class="indent-p"> IAAPA mailed an eight-page color brochure promoting amusement parks and attractions as ideal locations for commercial filming to9,000 advertising agencies, creative directors, art directors, and movie producers.
+        </p>
+      </div>
+    </div>
+
+    <div class="timeline-block next">
+      <img src="/assets/img/year-bar/1978.png" alt="">
+      <div class="timeline-content next" style="width:auto; height:auto; max-width:300px;">
+        <img class="timeline-img" src="/assets/img/year_photos/1978.png" alt="">
+        <p class="" style="color:#696969; font-size:14px;"><strong>1978 |</strong>  IAAPA added an associate member to the board of directors in an advisory role from the sales and manufacturing affiliates—Duane Weichman, of Chance Manufacturing. The chief intention was to give the manufacturer and supplier (M&S) community insight into convention selection, booth allocation, and trade show hours.</p><p class="indent-p"> IAAPA started a multiyear process to establish national voluntary ride safety standards through the F-24 committee of American Society for Testing and Materials (Today, the organization is known as ASTM International). This was in response to a threat of the U.S.Consumer Product Safety Commission (CPSC) to impose mandatory standards. CPSC had claimed it had jurisdiction over amusement rides.</p><p class="indent-p">IAAPA purchased a library of taped music exempt from licensing and made it available to membership to help them avoid licensing fees for music played in their facilities.
+        </p>
+      </div>
+    </div>
+
+    <div class="timeline-block third">
+      <img src="/assets/img/year-bar/1979.png" alt="">
+      <div class="timeline-content third" style="width:auto; height:auto; max-width:300px;">
+        <img class="timeline-img" src="/assets/img/year_photos/1979.png" alt="">
+        <p class="" style="color:#696969; font-size:14px;">1979 |  IAAPA spent much of the year fighting U.S. Department of Energy proposals for a federal energy conservation plan that included gasoline rationing and limits on weekend driving. Gary Wachs of Taft Amusement Park Group represented IAAPA in testimony at the House Subcommittee on Energy and Power.</p><p class="indent-p">The trade show hit 400 exhibitors, including 143 new companies, occupying 92,000 square feet of exhibit space—79,000 inside and 13,000 outside.</p><p class="indent-p">Truman Woodworth assumed the role as chairman. Having worked with Disney, Cedar Point, and Marriott, he was the first chairman who primarily worked for corporate theme parks
+        </p>
+      </div>
+    </div>
+
+    <div class="timeline-year" style="height:30px; width:40px; margin-top:4px; background-color:white;">
+      <a id="next-decade" ui-sref ="Timeline8"><button type="button" name="text"><img src="/assets/img/next-slide-btn.png" style="width:40px; height:40px;" alt=""></button></a>
+
+      <form id="next-page" ng-submit="vm.handleNext()">
+        <button ng-click="vm.handleNext()" type="button" name="text"><img src="/assets/img/next-slide-btn.png" style="width:40px; height:40px;" alt=""></button>
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,110 @@
+<div style="display:flex; justify-content:space-between; width:80%; margin:auto; margin-top:40px;">
+  <a class ="timeline-links" ui-sref="Timeline0" ng-click="vm.setDecade(0); vm.navSelect(0)">1900s</a>
+  <a class ="timeline-links" ui-sref="Timeline1" ng-click="vm.setDecade(1); vm.navSelect(1)" >1910s</a>
+  <a class ="timeline-links" ui-sref="Timeline2" ng-click="vm.setDecade(2); vm.navSelect(2)">1920s</a>
+  <a class ="timeline-links" ui-sref="Timeline3" ng-click="vm.setDecade(3); vm.navSelect(3)">1930s</a>
+  <a class ="timeline-links" ui-sref="Timeline4" ng-click="vm.setDecade(4); vm.navSelect(4)">1940s</a>
+  <a class ="timeline-links selectedNav" ui-sref="Timeline5" ng-click="vm.setDecade(5); vm.navSelect(5)">1950s</a>
+  <a class ="timeline-links" ui-sref="Timeline6" ng-click="vm.setDecade(6); vm.navSelect(6)">1960s</a>
+  <a class ="timeline-links" ui-sref="Timeline7" ng-click="vm.setDecade(7); vm.navSelect(7)">1970s</a>
+  <a class ="timeline-links" ui-sref="Timeline8" ng-click="vm.setDecade(8); vm.navSelect(8)">1980s</a>
+  <a class ="timeline-links" ui-sref="Timeline9" ng-click="vm.setDecade(9); vm.navSelect(9)">1990s</a>
+  <a class ="timeline-links" ui-sref="Timeline10" ng-click="vm.setDecade(10); vm.navSelect(10)">2000s</a>
+  <a class ="timeline-links" ui-sref="Timeline11" ng-click="vm.setDecade(11); vm.navSelect(11)">2010s</a>
+</div>
+
+
+<div class ="intro-div">
+  <p class="page-heads" style="text-align:left; margin-left:-3px; letter-spacing:0px;">From Kiddielands to Castles</p>
+    <p style="font-size:14px; margin-top:-34px; color:#696969;">It was a decade of evolution for the attractions industry as it continued its global recovery from the hard times of the Great Depression and World War II. With the postwar baby boom and growth of suburbia in the United States, kiddielands (the forebear of the modern family entertainment center) began springing up near another postwar phenomenon: the shopping center. Growing from fewer than two dozen in 1950 to more than 150 operating throughout the country by 1960, most kiddielands succumbed to rising property values and changing tastes by the 1970s. Meanwhile, another new type of attraction—theme parks—began their evolution from roadside attractions into global destinations like Disneyland, which opened in 1955. In Europe, the industry rebounded from the war with new levels of sophistication not yet seen in North America
+  </p>
+</div>
+
+<div class="timeline-container" style="">
+  <div class="line-div">
+  <div class="timeline-year" style="height:30px; width:40px; margin-top:4px; background-color:white;">
+    <a id="prev-decade" ui-sref ="Timeline4"><button type="button" name="text"><img src="/assets/img/prev-slide-btn.png" style="width:40px; height:40px;" alt=""></button></a>
+    <form id="prev-page" ng-submit="vm.handlePrev()">
+      <button ng-click="vm.handlePrev()" type="button" name="text"><img src="/assets/img/prev-slide-btn.png" style="width:40px; height:40px;" alt=""></button>
+    </form>
+  </div>
+
+    <div class="timeline-block first">
+      <img src="/assets/img/year-bar/1950.png" alt="">
+      <div class="timeline-content" style="width:auto; height:auto; max-width:300px;">
+        <img class="timeline-img" src="/assets/img/year_photos/1950.png" alt="">
+        <p style="color:#696969; font-size:14px;"><strong>1950 |</strong> At the 1950 convention, NAAPPB adopted a new code of ethics replacing one adopted in 1924 that was considered too long to be effective.</p><p class="indent-p">A new organization, the Kiddieland Operators Association, was formed to address the needs of this emerging sector. It failed to reach an affiliation agreement with NAAPPB, which responded by creating a new membership classification for kiddielands. The Kiddieland Operators Association was short-lived, however, as NAAPPB soon integrated kiddielands as a constituent group.</p><p class="indent-p"> While trade show attendance was down 20 percent, concerns about the worsening situation with the Korean War led to brisk purchasing on the trade show floor among the 81 exhibitors.
+        </p>
+      </div>
+    </div>
+
+    <div class="timeline-block first">
+      <img src="/assets/img/year-bar/1951.png" alt="">
+      <div class="timeline-content" style="width:auto; height:auto; max-width:300px;">
+        <img class="timeline-img" src="/assets/img/year_photos/1951.png" alt="">
+        <p style="color:#696969; font-size:14px;"><strong>1951 |</strong>  The NAAPPB Board of Directors voted to discontinue the organization’s representation in Washington, D.C., feeling it could better present its case through individual members rather than a paid lobbyist.
+        </p>
+      </div>
+    </div>
+
+    <div class="timeline-block first">
+      <img src="/assets/img/year-bar/1952.png" alt="">
+      <div class="timeline-content" style="width:auto; height:auto; max-width:300px;">
+        <p style="color:#696969; font-size:14px;"><strong>1952 |</strong>  NAAPPB sponsors the publication of “The Outdoor Amusement Industry, From Earliest Times to the Present.” Written by organization historian and ride manufacturer William F. Mangels, it is the first published history of the attractions industry.</p><p class="indent-p">A convention session on the growing impact of television concluded that while it was an excellent advertising medium, it had no place as an attraction at an amusement park.</p><p class="indent-p">A seven-man legislative committee was formed to lead efforts to repeal the federal 20 percent excise tax on admissions, a longtimegoal of the NAAPPB. The effort succeeded in 1954 with the virtual elimination of the levy. As a result of these efforts, the organization saw the need to re-establish a presence in Washington.
+        </p>
+      </div>
+    </div>
+
+    <div class="timeline-block first">
+      <img src="/assets/img/year-bar/1953.png" alt="">
+      <div class="timeline-content" style="width:auto; height:auto; max-width:300px;">
+        <p style="color:#696969; font-size:14px;"><strong>1953 |</strong>  Renovations at Chicago’s Sherman House increased total exhibit space by 20 percent to 24,000 square feet. This permitted five amusement devices to be in full operation on the exhibit floor for the first time.
+        </p>
+      </div>
+    </div>
+
+    <div class="timeline-block next">
+      <img src="/assets/img/year-bar/1955.png" alt="">
+      <div class="timeline-content next" style="width:auto; height:auto; max-width:300px;">
+        <p class="" style="color:#696969; font-size:14px;"><strong>1955 |</strong>  NAAPPB established a co-op television commercial plan that produced four separate animated television commercials members could purchase and customize for their own facilities.</p><p class="indent-p"> The Servicenter opened at the Sherman House for the convention. Sponsored by Billboard magazine and the Showmen’s League of America, it featured telephones for free local calls, a paging service, and convention information, foreshadowing today’s IAAPA Central.</p><p class="indent-p"> The convention also featured a special session on kiddielands that drew 125 operators. Another session featured C.V. Wood, general manager of Disneyland, reporting on the park’s first season, and hinted future attractions would include a Roto Jet, Dodgem, and mining-car ride.
+        </p>
+      </div>
+    </div>
+
+    <div class="timeline-block next">
+      <img src="/assets/img/year-bar/1956.png" alt="">
+      <div class="timeline-content next" style="width:auto; height:auto; max-width:300px;">
+        <img class="timeline-img" src="/assets/img/year_photos/1956.png" alt="">
+        <p class="" style="color:#696969; font-size:14px;"><strong>1956 |</strong>  Belle Cohn died in April. She had served as assistant to the secretary since the association’s founding; with more than 35 years of service, Cohn remains its longest serving employee.</p><p class="indent-p">The Summer Meeting traveled to Southern California where a record 200 people toured the new Disneyland along with other area attractions.
+        </p>
+      </div>
+    </div>
+
+    <div class="timeline-block next">
+      <img src="/assets/img/year-bar/1958.png" alt="">
+      <div class="timeline-content next" style="width:auto; height:auto; max-width:300px;">
+        <img class="timeline-img" src="/assets/img/year_photos/1958.png" alt="">
+        <p class="" style="color:#696969; font-size:14px;"><strong>1958 |</strong>  Following a yearlong search, John Bowman was hired as the new secretary replacing Paul Hudepohl, who decided to retire. Bowman was executive vice president of the Erie (Pennsylvania) Chamber of Commerce prior to joining NAAPPB.</p><p class="indent-p">The Summer Meeting traveled to Europe where members toured Tivoli Gardens, Blackpool Pleasure Beach, Munich’s Oktoberfest, and the Brussels World’s Fair. The attendees found an industry that was remaking itself following World War II, with intricate flower beds, elaborate landscaping, innovative lighting, music, and flashy new rides adorned with thousands of electric lights. “Europe is far ahead of us on ideas for flashing rides and parks ... we definitely will have 1959 improvements that are a result of this trip,” said Carl Sinclair of Ohio’s Meyers Lake Park in a Billboard interview. While on the trip, Jimmy Johnson, owner of Playland Park in San Antonio, Texas, ordered the first Calypso ride to be imported into North America.
+        </p><p class="indent-p"> NAAPPB commissioned marketing professor Thomas Lea Davidson of the University of Connecticut to conduct an in-depth study on consumer spending patterns in the outdoor entertainment industry. Trade show attendance, meanwhile, reached 7,000
+        </p>
+      </div>
+    </div>
+
+    <div class="timeline-block next">
+      <img src="/assets/img/year-bar/1959.png" alt="">
+      <div class="timeline-content next" style="width:auto; height:auto; max-width:300px;">
+        <img class="timeline-img" src="/assets/img/year_photos/1959.png" alt="">
+        <p class="" style="color:#696969; font-size:14px;"><strong>1959 |</strong>  Reflecting an increasing global profile, the name of the trade show was changed to the “International Outdoor Amusement Show.” The expo hit 100 exhibitors with two dozen firms turned away for a lack of space.</p><p class="indent-p">A report by the Program at Work Committee recommended the convention remain in Chicago “at all costs” in response to suggestions that the event move elsewhere. The board recommended increasing trade show space to another floor in the Sherman House to accommodate 30 more booths and expand space for the banquet.
+        </p>
+      </div>
+    </div>
+
+    <div class="timeline-year" style="height:30px; width:40px; margin-top:4px; background-color:white;">
+      <a id="next-decade" ui-sref ="Timeline6"><button type="button" name="text"><img src="/assets/img/next-slide-btn.png" style="width:40px; height:40px;" alt=""></button></a>
+
+      <form id="next-page" ng-submit="vm.handleNext()">
+        <button ng-click="vm.handleNext()" type="button" name="text"><img src="/assets/img/next-slide-btn.png" style="width:40px; height:40px;" alt=""></button>
+      </form>
+    </div>
+  </div>
+  </div>

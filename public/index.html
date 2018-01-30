@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <script src="/node_modules/angular/angular.js" charset="utf-8"></script>
+    <script src="/node_modules/@uirouter/angularjs/release/angular-ui-router.js" charset="utf-8"></script>
+    <script src="/node_modules/angular-resource/angular-resource.js" charset="utf-8"></script>
+    <script src="/node_modules/jquery/dist/jquery.js" charset="utf-8"></script>
+
+
+    <!-- <script src="/node_modules/angular-ui-router/release/angular-ui-router.js" charset="utf-8"></script> -->
+    <!-- <script src="/node_modules/angular-ui-router/release/ui-router-angularjs.js" charset="utf-8"></script> -->
+
+  <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script> -->
+  <script type="text/javascript" src="/assets/js/app.js" charset="utf-8"></script>
+  <script type="text/javascript" src="/assets/js/services/eraFactory.js"></script>
+  <script type="text/javascript" src="/assets/js/controllers/eraIndex.js"></script>
+
+
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <title>IAAPA100</title>
+        <!-- <base href="/"> -->
+    <!-- <base href="/#/"> -->
+  </head>
+  <body ng-app="centennial">
+
+    <div class="social">
+      <a target="_blank" style="margin-right:8px;transform: scale(0.7, 0.7);" href="https://www.facebook.com/IAAPAHQ"><img src="/assets/img/facebook_29px.png" alt=""></a>
+      <a target="_blank" style="margin-right:8px;transform: scale(0.7, 0.7);" href="https://www.twitter.com/IAAPAHQ"><img src="/assets/img/twitter_29px.png" alt="" style=""></a>
+      <a target="_blank" style="margin-right:8px;transform: scale(0.7, 0.7);" href="https://www.youtube.com/IAAPAHQ"><img src="/assets/img/youtube_29px.png" alt="" style=""></a>
+    </div>
+    <nav>
+
+      <div class="nav-div hvr-fade" style="background-color:#b09b66; width:144px; height:100px; padding-left:30px; margin-top:-4px; margin-bottom:-10px; margin-left:-30px;">
+        <a ui-sref="Home"><img id="logo" src="/assets/img/logo-rev-90.png" style="width:114px;"></a>
+      </div>
+      <div class="nav-div hvr-fade">
+        <div class="">
+          <p class="nav-title"><a ui-sref="About" class="title">ABOUT IAAPA</a></p>
+        </div>
+      </div>
+
+      <div class="nav-div hvr-fade">
+        <div class="dropdown">
+          <p class="nav-title" style="font-size:14px;">CELEBRATE THE PAST</p>
+          <div class="dropdown-content">
+            <a ui-sref="Timeline0" style="font-size:14px;">IAAPA TIMELINE</a>
+            <a ui-sref="Leaders" style="font-size:14px;">LEADERS OF DISTINCTION</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="nav-div hvr-fade">
+        <div class="dropdown">
+          <p class="nav-title" style="font-size:14px;"><a ui-sref="Stories">YOUR IAAPA STORIES</a></p>
+        </div>
+      </div>
+
+      <div class="nav-div hvr-fade">
+        <div class="dropdown">
+          <p class="nav-title" style="font-size:14px;"><a ui-sref="History">ORAL HISTORY PROJECT</a></p>
+        </div>
+      </div>
+
+      <div class="nav-div hvr-fade">
+        <div class="dropdown">
+          <p class="nav-title" style="font-size:14px;">BUILD THE FUTURE</p>
+          <div class="dropdown-content">
+            <a ui-sref="newHome" style="font-size:14px;">A NEW HOME</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="nav-div hvr-fade">
+        <div class="dropdown">
+          <p class="nav-title" style="font-size:14px;"><a ui-sref="Events">CENTENNIAL EVENTS</a></p>
+        </div>
+      </div>
+
+    </nav>
+
+    <div ui-view>
+    </div>
+      <div class="footer">
+        <p style="margin-bottom:7px; display:inline-block; color:white;">INTERNATIONAL ASSOCIATION OF AMUSEMENT PARKS AND ATTRACTIONS </p>
+        <p style="color:white;">9205 SOUTHPARK CENTER LOOP  &nbsp; | &nbsp;  ORLANDO, FL USA 32819  &nbsp; | &nbsp;  +1 321/319-7600  &nbsp; | &nbsp;  <a href="http://www.iaapa.org" target="_blank" style="text-decoration:none; color:white; ">WWW.IAAPA.ORG</a></p>
+      </div>
+
+
+  </body>
+</html>
