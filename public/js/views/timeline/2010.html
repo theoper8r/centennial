@@ -14,9 +14,9 @@
 </div>
 
 
-<div class ="intro-div">
+<div ng-class="{'intro-div-2':vm.hovering}" class ="intro-div">
   <p class="page-heads" style="text-align:left; margin-left:-3px; letter-spacing:0px;">Prepared for the Next Century</p>
-    <p style="font-size:14px; margin-top:-34px; color:#696969;">The explosive growth of the industry in China, the Middle East, and other developing portions of the world during this decade demonstrate the industry’s global appeal. The debut of The Wizarding World of Harry Potter at Universal’s Islands of Adventure in Orlando ushered in the age of immersive lands dedicated to a single story/intellectual property (IP), which drove billions of dollars in new investments among major theme park resorts around the world. At the other end of the spectrum, major operators opened IP-driven, smaller-scale attractions throughout the globe to appeal to time-pressed consumers. Technology continued to play an increasing role in attractions, enhancing not only their entertainment value but safety. It has truly become a global industry with numerous attractions operators crossing international borders and suppliers selling seamlessly throughout the world.
+    <p ng-mouseenter="vm.hovering=true" style="font-size:14px; margin-top:-34px; color:#696969;">The explosive growth of the industry in China, the Middle East, and other developing portions of the world during this decade demonstrate the industry’s global appeal. The debut of The Wizarding World of Harry Potter at Universal’s Islands of Adventure in Orlando ushered in the age of immersive lands dedicated to a single story/intellectual property (IP), which drove billions of dollars in new investments among major theme park resorts around the world. At the other end of the spectrum, major operators opened IP-driven, smaller-scale attractions throughout the globe to appeal to time-pressed consumers. Technology continued to play an increasing role in attractions, enhancing not only their entertainment value but safety. It has truly become a global industry with numerous attractions operators crossing international borders and suppliers selling seamlessly throughout the world.
   </p>
 </div>
 
@@ -114,11 +114,9 @@
     </div>
 
     <div class="timeline-year" style="height:30px; width:40px; margin-top:4px; background-color:white;">
-      <a id="next-decade" ui-sref ="Timeline0"><button type="button" name="text"><img src="/assets/img/next-slide-btn.png" style="width:40px; height:40px;" alt=""></button></a>
+      <a id="next-decade"  style="display:block;"ui-sref ="Timeline0"><button type="button" name="text"><img src="/assets/img/next-slide-btn.png" style="width:40px; height:40px;" alt=""></button></a>
 
-      <form id="next-page" ng-submit="vm.handleNext()">
-        <button ng-click="vm.handleNext()" type="button" name="text"><img src="/assets/img/next-slide-btn.png" style="width:40px; height:40px;" alt=""></button>
-      </form>
+
     </div>
   </div>
   </div>

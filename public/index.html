@@ -11,11 +11,13 @@
     <script type="text/javascript" src="/assets/js/app.js" charset="utf-8"></script>
     <script type="text/javascript" src="/assets/js/services/eraFactory.js"></script>
     <script type="text/javascript" src="/assets/js/controllers/eraIndex.js"></script>
+    <script type="text/javascript" src="/assets/js/services/leaderService.js"></script>
+    <script type="text/javascript" src="/assets/js/controllers/leaders.js"></script>
 
 
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <title>IAAPA100</title>
-        <!-- <base href="/"> -->
+        <base href="/">
     <!-- <base href="/#/"> -->
   </head>
   <body ng-app="centennial">
@@ -41,7 +43,21 @@
           <p class="nav-title" style="font-size:14px;">CELEBRATE THE PAST</p>
           <div class="dropdown-content">
             <a ui-sref="Timeline0" style="font-size:14px;">IAAPA TIMELINE</a>
-            <a ui-sref="Leaders" style="font-size:14px;">LEADERS OF DISTINCTION</a>
+            <div class="dropdown-2" style="">
+            <a class="" ui-sref="Leaders" style="font-size:14px;">LEADERS OF DISTINCTION</a>
+            <div style="width:200px; height:200px;" class="dropdown-content-2">
+              <h3 ng-click="gotoAnchorPage(1)">
+                Go to anchor 1
+              </h3>
+            </div>
+            </div>
+          </div>
+          <div class="dropdown-2" ng-controller="ScrollCtrl">
+            <div class="dropdown-content-2">
+              <a ng-click="gotoAnchorPage(1)">
+                Go to anchor 1
+              </a>
+            </div>
           </div>
         </div>
       </div>

@@ -8,6 +8,8 @@ angular
 ])
 
 function indexController(eraFactory, $http, $state) {
+  this.hovering = false
+  // this.collapse = false
   // console.log('at index')
   // this.eras = eraFactory.query()
   // console.log(eraFactory.query())
@@ -79,6 +81,7 @@ if (this.slideNum === 1 && nextPages.length==0) {
 
   nextSlide.style.display = "none"
   nextDecade.style.display = "block"
+  this.slideNum = 1
 }
 
 if (this.slideNum === 1 && nextPages.length>0) {
