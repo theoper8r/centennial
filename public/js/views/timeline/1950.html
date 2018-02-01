@@ -1,4 +1,4 @@
-<div style="display:flex; justify-content:space-between; width:80%; margin:auto; margin-top:40px;">
+<div style="max-width:1100px; display:flex; justify-content:space-between; width:80%; margin:auto; margin-top:40px;">
   <a class ="timeline-links" ui-sref="Timeline0" ng-click="vm.setDecade(0); vm.navSelect(0)">1900s</a>
   <a class ="timeline-links" ui-sref="Timeline1" ng-click="vm.setDecade(1); vm.navSelect(1)" >1910s</a>
   <a class ="timeline-links" ui-sref="Timeline2" ng-click="vm.setDecade(2); vm.navSelect(2)">1920s</a>
@@ -16,8 +16,13 @@
 
 <div ng-class="{'intro-div-2':vm.hovering}" class ="intro-div">
   <p class="page-heads" style="text-align:left; margin-left:-3px; letter-spacing:0px;">From Kiddielands to Castles</p>
-    <p ng-mouseenter="vm.hovering=true" style="font-size:14px; margin-top:-34px; color:#696969;">It was a decade of evolution for the attractions industry as it continued its global recovery from the hard times of the Great Depression and World War II. With the postwar baby boom and growth of suburbia in the United States, kiddielands (the forebear of the modern family entertainment center) began springing up near another postwar phenomenon: the shopping center. Growing from fewer than two dozen in 1950 to more than 150 operating throughout the country by 1960, most kiddielands succumbed to rising property values and changing tastes by the 1970s. Meanwhile, another new type of attraction—theme parks—began their evolution from roadside attractions into global destinations like Disneyland, which opened in 1955. In Europe, the industry rebounded from the war with new levels of sophistication not yet seen in North America
+    <p style="font-size:14px; margin-top:-34px; color:#696969;">It was a decade of evolution for the attractions industry as it continued its global recovery from the hard times of the Great Depression and World War II. With the postwar baby boom and growth of suburbia in the United States, kiddielands (the forebear of the modern family entertainment center) began springing up near another postwar phenomenon: the shopping center. Growing from fewer than two dozen in 1950 to more than 150 operating throughout the country by 1960, most kiddielands succumbed to rising property values and changing tastes by the 1970s. Meanwhile, another new type of attraction—theme parks—began their evolution from roadside attractions into global destinations like Disneyland, which opened in 1955. In Europe, the industry rebounded from the war with new levels of sophistication not yet seen in North America.
   </p>
+</div>
+
+<div style="display:flex; justify-content:center;">
+<img  ng-mouseenter="vm.hovering=true;" style="margin-top:-30px;" src="assets/img/down-btn.png" alt="">
+<!-- <img  style="display:none" ng-style="show" ng-mouseenter="vm.collapse=true; hide={'display':'block'} show={'display':'none'}" style="margin-top:-30px;" src="assets/img/up-btn.png" alt=""> -->
 </div>
 
 <div class="timeline-container" style="">

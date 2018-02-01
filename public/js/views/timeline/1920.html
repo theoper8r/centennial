@@ -1,4 +1,4 @@
-<div style="display:flex; justify-content:space-between; width:80%; margin:auto; margin-top:40px;">
+<div style="max-width:1100px; display:flex; justify-content:space-between; width:80%; margin:auto; margin-top:40px;">
   <a class ="timeline-links" ui-sref="Timeline0" ng-click="vm.setDecade(0); vm.navSelect(0)">1900s</a>
   <a class ="timeline-links" ui-sref="Timeline1" ng-click="vm.setDecade(1); vm.navSelect(1)" >1910s</a>
   <a class ="timeline-links selectedNav" ui-sref="Timeline2" ng-click="vm.setDecade(2); vm.navSelect(2)">1920s</a>
@@ -15,8 +15,13 @@
 
 <div ng-class="{'intro-div-2':vm.hovering}" class ="intro-div">
   <p class="page-heads" style="text-align:left; margin-left:-3px; letter-spacing:0px;">The Golden Age</p>
-    <p ng-mouseenter="vm.hovering=true" style="font-size:14px; margin-top:-34px; color:#696969;">By many accounts, the amusement industry entered its first Golden Age in the 1920s. With increasing prosperity, business grew to record levels, technology made ever more thrilling rides possible, and the large, city-based, family-owned amusement park emerged as the heart of this growing industry. Roller coasters emerged as the king of the park, with drops and twists that were unimaginable just a few years before. The emergence of the automobile impacted the industry, closing dozens of parks that lacked accessibility androom for parking lots and were replaced by newer, more modern amusement parks. Swimming pools became a popular attraction at dozens of amusement parks
+    <p style="font-size:14px; margin-top:-34px; color:#696969;">By many accounts, the amusement industry entered its first Golden Age in the 1920s. With increasing prosperity, business grew to record levels, technology made ever more thrilling rides possible, and the large, city-based, family-owned amusement park emerged as the heart of this growing industry. Roller coasters emerged as the king of the park, with drops and twists that were unimaginable just a few years before. The emergence of the automobile impacted the industry, closing dozens of parks that lacked accessibility androom for parking lots and were replaced by newer, more modern amusement parks. Swimming pools became a popular attraction at dozens of amusement parks
   </p>
+</div>
+
+<div style="display:flex; justify-content:center;">
+<img  ng-mouseenter="vm.hovering=true;" style="margin-top:-30px;" src="assets/img/down-btn.png" alt="">
+<!-- <img  style="display:none" ng-style="show" ng-mouseenter="vm.collapse=true; hide={'display':'block'} show={'display':'none'}" style="margin-top:-30px;" src="assets/img/up-btn.png" alt=""> -->
 </div>
 
 <div class="timeline-container" style="">

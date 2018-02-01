@@ -1,4 +1,4 @@
-<div style="display:flex; justify-content:space-between; width:80%; margin:auto; margin-top:40px;">
+<div style="max-width:1100px; display:flex; justify-content:space-between; width:80%; margin:auto; margin-top:40px;">
   <a class ="timeline-links" ui-sref="Timeline0" ng-click="vm.setDecade(0); vm.navSelect(0)">1900s</a>
   <a class ="timeline-links" ui-sref="Timeline1" ng-click="vm.setDecade(1); vm.navSelect(1)" >1910s</a>
   <a class ="timeline-links" ui-sref="Timeline2" ng-click="vm.setDecade(2); vm.navSelect(2)">1920s</a>
@@ -15,8 +15,13 @@
 
 <div ng-class="{'intro-div-2':vm.hovering}" class ="intro-div">
   <p class="page-heads" style="text-align:left; margin-left:-3px; letter-spacing:0px;">The Great Depression Brings Clouds of War</p>
-    <p ng-mouseenter="vm.hovering=true" style="font-size:14px; margin-top:-34px; color:#696969;">The Great Depression pressured the industry, and hundreds of amusement parks closed worldwide as discretionary income dried up. By 1939, Billboard reported fewer than 400 parks remained in operation in the U.S.—about half the number that existed three decades earlier. To survive, parks turned away from adding new rides and focused on promotions and live entertainment, particularly big band dances
+    <p style="font-size:14px; margin-top:-34px; color:#696969;">The Great Depression pressured the industry, and hundreds of amusement parks closed worldwide as discretionary income dried up. By 1939, Billboard reported fewer than 400 parks remained in operation in the U.S.—about half the number that existed three decades earlier. To survive, parks turned away from adding new rides and focused on promotions and live entertainment, particularly big band dances.
   </p>
+</div>
+
+<div style="display:flex; justify-content:center;">
+<img  ng-mouseenter="vm.hovering=true;" style="margin-top:-30px;" src="assets/img/down-btn.png" alt="">
+<!-- <img  style="display:none" ng-style="show" ng-mouseenter="vm.collapse=true; hide={'display':'block'} show={'display':'none'}" style="margin-top:-30px;" src="assets/img/up-btn.png" alt=""> -->
 </div>
 
 <div class="timeline-container" style="">
