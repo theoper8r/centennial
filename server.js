@@ -10,7 +10,7 @@ const path = require('path')
 // const favicon = require('serve-favicon')
 // const logger = require('morgan')
 // const cookieParser = require('cookie-parser')
-const Era = require('./db/schema.js')
+const Form = require('./db/schema.js')
 
 require('./db/connection.js')
 
@@ -28,7 +28,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade')
 
 app.get('/api/eras', (req, res) => {
-  Era.find({}).then((eras) => {
+  Form.find({}).then((eras) => {
     console.log('from server')
     console.log(eras)
     res.json(eras)
@@ -36,7 +36,7 @@ app.get('/api/eras', (req, res) => {
 })
 
 app.get('/eras/:decade', (req, res) => {
-  Era.find({decade: req.params.decade}, null).then((decade) => {
+  Form.find({decade: req.params.decade}, null).then((decade) => {
     console.log('json res' + decade)
     res.json(decade)
   })

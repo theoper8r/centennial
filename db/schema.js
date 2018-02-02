@@ -2,17 +2,15 @@ const mongoose = require('./connection.js')
 
 
 
-const EraSchema = new mongoose.Schema({
+const FormSchema = new mongoose.Schema({
+  name:String,
+  email:String,
+  company: String,
   title:String,
-  summary:String,
-  decade: Number,
-  articles: [{
-    year: Number,
-    img: String,
-    text: String
-  }]
+  location:String,
+  story: String
 })
 
-const Era = mongoose.model('Era', EraSchema)
+const Form = mongoose.model('Form', FormSchema)
 
-module.exports = Era
+module.exports = Form

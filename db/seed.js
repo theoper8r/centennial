@@ -1,16 +1,18 @@
-const eraData = require('./seeds.json')
-const Era = require('./schema.js')
+const FormData = require('./seeds.json')
+const Form = require('./schema.js')
 
-Era.remove({}).then(function(){
-  eraData.forEach(function(era) {
-    Era.create({
-      title:era.title,
-      summary:era.summary,
-      decade: era.decade,
-      articles: era.articles
+Form.remove({}).then(function(){
+  FormData.forEach(function(Form) {
+    Form.create({
+      name:Form.name,
+      email:Form.email,
+      company: Form.company,
+      title:Form.title,
+      location:Form.location,
+      story: Form.story
     })
-      .then((newEra) => {
-        console.log(newEra)
+      .then((newForm) => {
+        console.log(newForm)
       })
       .catch((err) => {
         console.log(err)
@@ -20,4 +22,10 @@ Era.remove({}).then(function(){
   .then(() => {
     process.exit()
   })
+  .catch((err) => {
+    console.log(err)
+  })
+})
+.catch((err) => {
+  console.log(err)
 })
