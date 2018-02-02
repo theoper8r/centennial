@@ -13,12 +13,12 @@
   <a class ="timeline-links" ui-sref="Timeline11" ng-click="vm.setDecade(11); vm.navSelect(11)">2010s</a>
 </div>
 
-<div class ="intro-div"ng-class="{'intro-div-2':vm.hovering}">
+<div class ="intro-div" id="intro-div" ng-class="{'intro-div-2':vm.hovering}">
   <p class="page-heads" style="text-align:left; letter-spacing:0px;">An Identity Emerges</p>
     <p style="font-size:14px; margin-top:-34px; color:#696969;">By the 1910s, the amusement industry had matured. Transportation companies, which looked at amusement parks as a sideline, were exiting the business, and a new generation of entrepreneurs was acquiring the facilities as its primary business. As consumer demandand technology continued to evolve, the focus of amusement parks shifted from passive attractions such as concerts and dancing to amusement rides, and amusement parks began taking on the identity we know today. With business people now running amusement parks as their primary source of income, they came to the common realization that there were looming threats to their operations andthey needed to speak with one voice, set standards for high-quality operations, and share operational ideas.
   </p>
 </div>
-<div style="display:flex; justify-content:center;">
+<div id="show-btn" style="">
 <img  ng-mouseenter="vm.hovering=true;" style="margin-top:-30px;" src="assets/img/down-btn.png" alt="">
 <!-- <img  style="display:none" ng-style="show" ng-mouseenter="vm.collapse=true; hide={'display':'block'} show={'display':'none'}" style="margin-top:-30px;" src="assets/img/up-btn.png" alt=""> -->
 </div>

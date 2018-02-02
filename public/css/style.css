@@ -410,6 +410,13 @@ button:focus { outline:0 !important; }
   text-decoration: underline;
 }
 
+.hide-btn {
+  display:none;
+}
+
+#show-btn {
+  display:none;
+}
 
 .leader-drop:hover {
   background-color: #f1f1f1;
