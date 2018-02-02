@@ -119,9 +119,10 @@
     </div>
 
     <div class="timeline-year" style="height:30px; width:40px; margin-top:4px; background-color:white;">
-      <a id="next-decade"  style="display:block;"ui-sref ="Timeline0"><button type="button" name="text"><img src="/assets/img/next-slide-btn.png" style="width:40px; height:40px;" alt=""></button></a>
-
-
+      <a id="next-decade" ui-sref ="Timeline0"><button type="button" name="text"><img src="/assets/img/next-slide-btn.png" style="width:40px; height:40px;" alt=""></button></a>
+      <form id="next-page" ng-submit="vm.handleNext()">
+        <button ng-click="vm.handleNext()" type="button" name="text"><img src="/assets/img/next-slide-btn.png" style="width:40px; height:40px;" alt=""></button>
+      </form>
     </div>
   </div>
   </div>
