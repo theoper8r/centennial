@@ -118,7 +118,9 @@ function Router($stateProvider, $urlRouterProvider, $locationProvider, $window) 
   })
   .state('Stories', {
     url: '/stories',
-    templateUrl: 'assets/js/views/stories.html'
+    templateUrl: 'assets/js/views/stories.html',
+    controller: 'storiesCtrl',
+    controllerAs: 'vm'
   })
   .state('History', {
     url: '/history',
