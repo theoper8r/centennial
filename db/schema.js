@@ -11,6 +11,6 @@ const FormSchema = new mongoose.Schema({
   story: String
 })
 
-const Form = mongoose.model('Form', FormSchema)
+// const Form = mongoose.model('Form', FormSchema)
 
-module.exports = Form
+module.exports = mongoose.model('Form', FormSchema)

@@ -1,15 +1,15 @@
-const FormData = require('./seeds.json')
+const formData = require('./seeds.json')
 const Form = require('./schema.js')
 
 Form.remove({}).then(function(){
-  FormData.forEach(function(Form) {
+  formData.forEach(function(data) {
     Form.create({
-      name:Form.name,
-      email:Form.email,
-      company: Form.company,
-      title:Form.title,
-      location:Form.location,
-      story: Form.story
+      name:data.name,
+      email:data.email,
+      company: data.company,
+      title:data.title,
+      location:data.location,
+      story: data.story
     })
       .then((newForm) => {
         console.log(newForm)
