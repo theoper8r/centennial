@@ -32,8 +32,8 @@
     <nav>
 
 
-      <div class="nav-div hvr-fade" style="background-color:#b09b66; width:144px; height:100px; padding-left:30px; margin-top:-4px; margin-bottom:-10px; margin-left:-31px;">
-        <a ui-sref="Home"><img id="logo" align="left" src="/assets/img/logo-rev-90.png" style="width:114px;"></a>
+      <div class="nav-div hvr-fade logo" style="background-color:#b09b66; width:144px; height:100px; padding-left:30px; margin-top:-4px; margin-bottom:-10px; margin-left:-31px;">
+        <a class="logo" ui-sref="Home"><img id="logo" class="logo" align="left" src="/assets/img/logo-rev-90.png" style="width:114px;"></a>
       </div>
       <div class="nav-div hvr-fade">
         <div class="">
@@ -93,17 +93,18 @@
       </div>
 
       <div class="mobile-nav">
-        <div style="width:80px; height:80px;" class="mob-drop-btn">
+        <label for="mob-toggle"><div style="width:80px; height:80px;" class="mob-drop-btn">
           <img class="" src="assets/img/mobile-menu64.png" alt="">
-        </div>
+        </div></label>
+        <input type="checkbox" id="mob-toggle">
         <div class="mobile-drop-content">
-          <p class="nav-title"><a ui-sref="About" class="title">ABOUT IAAPA</a></p>
+          <a ui-sref="About" class="title" style="font-size:14px;">ABOUT IAAPA</a>
           <a ui-sref="Timeline0" style="font-size:14px;">IAAPA TIMELINE</a>
           <a class="" ui-sref="Leaders" style="font-size:14px;">LEADERS OF DISTINCTION</a>
-          <p class="nav-title" style="font-size:14px;"><a ui-sref="Stories">YOUR IAAPA STORIES</a></p>
-          <p class="nav-title" style="font-size:14px;"><a ui-sref="History">ORAL HISTORY PROJECT</a></p>
+          <a ui-sref="Stories" style="font-size:14px;">YOUR IAAPA STORIES</a>
+          <a ui-sref="History" style="font-size:14px;">ORAL HISTORY PROJECT</a>
           <a ui-sref="newHome" style="font-size:14px;">A NEW HOME</a>
-          <p class="nav-title" style="font-size:14px;"><a ui-sref="Events">CENTENNIAL EVENTS</a></p>
+          <a ui-sref="Events" style="font-size:14px;">CENTENNIAL EVENTS</a>
         </div>
       </div>
 
