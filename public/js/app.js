@@ -13,6 +13,9 @@ angular.module('centennial', [
   '$locationProvider',
   Router
 ])
+.run(['$anchorScroll', function($anchorScroll) {
+  $anchorScroll.yOffset = 50;   // always scroll by 50 extra pixels
+}])
 
 
 function Router($stateProvider, $urlRouterProvider, $locationProvider, $window) {
@@ -109,11 +112,15 @@ function Router($stateProvider, $urlRouterProvider, $locationProvider, $window) 
   })
   .state('Leaders', {
     url: '/leaders',
-    templateUrl: 'assets/js/views/leaders.html'
+    templateUrl: 'assets/js/views/leaders.html',
+    controller: 'ScrollCtrl',
+    controllerAs: 'vm'
   })
   .state('Stories', {
     url: '/stories',
-    templateUrl: 'assets/js/views/stories.html'
+    templateUrl: 'assets/js/views/stories.html',
+    controller: 'storiesCtrl',
+    controllerAs: 'vm'
   })
   .state('History', {
     url: '/history',
@@ -128,6 +135,6 @@ function Router($stateProvider, $urlRouterProvider, $locationProvider, $window) 
     templateUrl: 'assets/js/views/events.html'
   })
 
-  $urlRouterProvider.otherwise('/')
-  // $locationProvider.html5Mode(true)
+  // $urlRouterProvider.otherwise('/')
+  $locationProvider.html5Mode(true)
 }

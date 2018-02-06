@@ -1,4 +1,4 @@
-<div style="display:flex; justify-content:space-between; width:80%; margin:auto; margin-top:40px;">
+<div style=" display:flex; justify-content:space-between; width:80%; margin:auto; margin-top:40px;">
   <a class ="timeline-links" ui-sref="Timeline0" ng-click="vm.setDecade(0); vm.navSelect(0)">1900s</a>
   <a class ="timeline-links" ui-sref="Timeline1" ng-click="vm.setDecade(1); vm.navSelect(1)" >1910s</a>
   <a class ="timeline-links" ui-sref="Timeline2" ng-click="vm.setDecade(2); vm.navSelect(2)">1920s</a>
@@ -13,11 +13,16 @@
   <a class ="timeline-links" ui-sref="Timeline11" ng-click="vm.setDecade(11); vm.navSelect(11)">2010s</a>
 </div>
 
-<div class ="intro-div">
+<div ng-class="{'intro-div-2':vm.hovering}" class ="intro-div" id="intro-div">
   <p class="page-heads" style="text-align:left; margin-left:-3px; letter-spacing:0px;">Putting the “I” in IAAPA</p>
     <p style="font-size:14px; margin-top:-34px; color:#696969;">As the 1980s dawned, the industry in North America was maturing. The opening of Canada’s Wonderland outside Toronto, Canada, in 1981 signaled the end of the theme park boom—the result of increasing costs and market saturation. Similar factors also ended the rollercoaster arms race with the completion of the “American Eagle” at Marriott’s Great America, north of Chicago. Instead, it was the decade of water attractions. New innovations like river rapids and “spillwater” rides using giant, multipassenger boats became industry staples, while the nascent water park industry spread throughout the United States. In 1982, Carowinds, uniquely positioned on the border of North and South Carolina, opened the “Ocean Island” wave pool. For an additional $3, guests could enter the water park. In 1983, Geauga Lake in Aurora, Ohio, became the first park to offer both a water park and amusement park for one single admission price, now an industry staple. Technology also began to play a greater role, with simulator attractions becoming popular.
     </p><p class="indent-p"> Globally, the industry began to spread. Tokyo Disneyland opened to huge crowds, signaling the arrival of American-style theme parks in international markets and driving the globalization of the industry. Other developers attempted to bring modern theme parks to China and India with mixed success, while the industry in Europe grew in scale and sophistication.
   </p>
+</div>
+
+<div id="show-btn" style="">
+<img  ng-mouseenter="vm.hovering=true;" style="margin-top:-30px;" src="assets/img/down-btn.png" alt="">
+<!-- <img  style="display:none" ng-style="show" ng-mouseenter="vm.collapse=true; hide={'display':'block'} show={'display':'none'}" style="margin-top:-30px;" src="assets/img/up-btn.png" alt=""> -->
 </div>
 
 <div class="timeline-container" style="">
@@ -75,7 +80,7 @@
       <img src="/assets/img/year-bar/1985.png" alt="">
       <div class="timeline-content next" style="width:auto; height:auto; max-width:300px;">
         <img class="timeline-img" src="/assets/img/year_photos/1985.png" alt="">
-        <p class="" style="color:#696969; font-size:14px;"><strong>1985 |</strong>  IAAPA representatives attended trade shows in Germany (Show Aktuell in Munich) and England (Amusement Trades Exhibition International in London).</p><p class="indent-p">The IAAPA Board of Directors voted at the March meeting to close the headquarters in Chicago, where it had been since 1920, and combine it with the office in the Washington, D.C., area. At the time, the staff consisted of eight people.</p><p class="indent-p">IAAPA’s flagship publication Funworld magazine launched, replacing ActionNews, which debuted several years earlier.</p><p class="indent-p">IAAPA retained the Stanford Research Institute to prepare an impact report on the industry to determine its economic and social impact including employment, payroll, taxes paid, and goods and services purchased
+        <p class="" style="color:#696969; font-size:14px;"><strong>1985 |</strong>  IAAPA representatives attended trade shows in Germany (Show Aktuell in Munich) and England (Amusement Trades Exhibition International in London).</p><p class="indent-p">The IAAPA Board of Directors voted at the March meeting to close the headquarters in Chicago, where it had been since 1920, and combine it with the office in the Washington, D.C., area. At the time, the staff consisted of eight people.</p><p class="indent-p">IAAPA’s flagship publication Funworld magazine launched, replacing ActionNews, which debuted several years earlier.</p><p class="indent-p">IAAPA retained the Stanford Research Institute to prepare an impact report on the industry to determine its economic and social impact including employment, payroll, taxes paid, and goods and services purchased.
         </p>
       </div>
     </div>
@@ -94,7 +99,7 @@
       <img src="/assets/img/year-bar/1987.png" alt="">
       <div class="timeline-content next" style="width:auto; height:auto; max-width:300px;">
         <img class="timeline-img" src="/assets/img/year_photos/1987.png" alt="">
-        <p class="" style="color:#696969; font-size:14px;"><strong>1987 |</strong>  IAAPA Summer Meeting in Phantasialand
+        <p class="" style="color:#696969; font-size:14px;"><strong>1987 |</strong>  IAAPA Summer Meeting in Phantasialand.
         </p>
       </div>
     </div>

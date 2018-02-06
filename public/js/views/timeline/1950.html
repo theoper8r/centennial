@@ -1,4 +1,4 @@
-<div style="display:flex; justify-content:space-between; width:80%; margin:auto; margin-top:40px;">
+<div style=" display:flex; justify-content:space-between; width:80%; margin:auto; margin-top:40px;">
   <a class ="timeline-links" ui-sref="Timeline0" ng-click="vm.setDecade(0); vm.navSelect(0)">1900s</a>
   <a class ="timeline-links" ui-sref="Timeline1" ng-click="vm.setDecade(1); vm.navSelect(1)" >1910s</a>
   <a class ="timeline-links" ui-sref="Timeline2" ng-click="vm.setDecade(2); vm.navSelect(2)">1920s</a>
@@ -14,11 +14,18 @@
 </div>
 
 
-<div class ="intro-div">
+<div ng-class="{'intro-div-2':vm.hovering}" class ="intro-div" id="intro-div">
   <p class="page-heads" style="text-align:left; margin-left:-3px; letter-spacing:0px;">From Kiddielands to Castles</p>
-    <p style="font-size:14px; margin-top:-34px; color:#696969;">It was a decade of evolution for the attractions industry as it continued its global recovery from the hard times of the Great Depression and World War II. With the postwar baby boom and growth of suburbia in the United States, kiddielands (the forebear of the modern family entertainment center) began springing up near another postwar phenomenon: the shopping center. Growing from fewer than two dozen in 1950 to more than 150 operating throughout the country by 1960, most kiddielands succumbed to rising property values and changing tastes by the 1970s. Meanwhile, another new type of attraction—theme parks—began their evolution from roadside attractions into global destinations like Disneyland, which opened in 1955. In Europe, the industry rebounded from the war with new levels of sophistication not yet seen in North America
+    <p style="font-size:14px; margin-top:-34px; color:#696969;">It was a decade of evolution for the attractions industry as it continued its global recovery from the hard times of the Great Depression and World War II. With the postwar baby boom and growth of suburbia in the United States, kiddielands (the forebear of the modern family entertainment center) began springing up near another postwar phenomenon: the shopping center. Growing from fewer than two dozen in 1950 to more than 150 operating throughout the country by 1960, most kiddielands succumbed to rising property values and changing tastes by the 1970s. Meanwhile, another new type of attraction—theme parks—began their evolution from roadside attractions into global destinations like Disneyland, which opened in 1955. In Europe, the industry rebounded from the war with new levels of sophistication not yet seen in North America.
   </p>
 </div>
+
+<div id="show-btn" style="">
+<img  ng-mouseenter="vm.hovering=true;" style="margin-top:-30px;" src="assets/img/down-btn.png" alt="">
+<!-- <img  style="display:none" ng-style="show" ng-mouseenter="vm.collapse=true; hide={'display':'block'} show={'display':'none'}" style="margin-top:-30px;" src="assets/img/up-btn.png" alt=""> -->
+</div>
+
+
 
 <div class="timeline-container" style="">
   <div class="line-div">
@@ -50,7 +57,7 @@
     <div class="timeline-block first">
       <img src="/assets/img/year-bar/1952.png" alt="">
       <div class="timeline-content" style="width:auto; height:auto; max-width:300px;">
-        <p style="color:#696969; font-size:14px;"><strong>1952 |</strong>  NAAPPB sponsors the publication of “The Outdoor Amusement Industry, From Earliest Times to the Present.” Written by organization historian and ride manufacturer William F. Mangels, it is the first published history of the attractions industry.</p><p class="indent-p">A convention session on the growing impact of television concluded that while it was an excellent advertising medium, it had no place as an attraction at an amusement park.</p><p class="indent-p">A seven-man legislative committee was formed to lead efforts to repeal the federal 20 percent excise tax on admissions, a longtimegoal of the NAAPPB. The effort succeeded in 1954 with the virtual elimination of the levy. As a result of these efforts, the organization saw the need to re-establish a presence in Washington.
+        <p style="color:#696969; font-size:14px;"><strong>1952 |</strong>  NAAPPB sponsors the publication of “The Outdoor Amusement Industry, From Earliest Times to the Present.” Written by organization historian and ride manufacturer William F. Mangels, it is the first published history of the attractions industry.</p><p class="indent-p">A convention session on the growing impact of television concluded that while it was an excellent advertising medium, it had no place as an attraction at an amusement park.</p><p class="indent-p">A seven-man legislative committee was formed to lead efforts to repeal the federal 20 percent excise tax on admissions, a longtime goal of the NAAPPB. The effort succeeded in 1954 with the virtual elimination of the levy. As a result of these efforts, the organization saw the need to re-establish a presence in Washington.
         </p>
       </div>
     </div>
@@ -85,7 +92,7 @@
       <div class="timeline-content next" style="width:auto; height:auto; max-width:300px;">
         <img class="timeline-img" src="/assets/img/year_photos/1958.png" alt="">
         <p class="" style="color:#696969; font-size:14px;"><strong>1958 |</strong>  Following a yearlong search, John Bowman was hired as the new secretary replacing Paul Hudepohl, who decided to retire. Bowman was executive vice president of the Erie (Pennsylvania) Chamber of Commerce prior to joining NAAPPB.</p><p class="indent-p">The Summer Meeting traveled to Europe where members toured Tivoli Gardens, Blackpool Pleasure Beach, Munich’s Oktoberfest, and the Brussels World’s Fair. The attendees found an industry that was remaking itself following World War II, with intricate flower beds, elaborate landscaping, innovative lighting, music, and flashy new rides adorned with thousands of electric lights. “Europe is far ahead of us on ideas for flashing rides and parks ... we definitely will have 1959 improvements that are a result of this trip,” said Carl Sinclair of Ohio’s Meyers Lake Park in a Billboard interview. While on the trip, Jimmy Johnson, owner of Playland Park in San Antonio, Texas, ordered the first Calypso ride to be imported into North America.
-        </p><p class="indent-p"> NAAPPB commissioned marketing professor Thomas Lea Davidson of the University of Connecticut to conduct an in-depth study on consumer spending patterns in the outdoor entertainment industry. Trade show attendance, meanwhile, reached 7,000
+        </p><p class="indent-p"> NAAPPB commissioned marketing professor Thomas Lea Davidson of the University of Connecticut to conduct an in-depth study on consumer spending patterns in the outdoor entertainment industry. Trade show attendance, meanwhile, reached 7,000.
         </p>
       </div>
     </div>

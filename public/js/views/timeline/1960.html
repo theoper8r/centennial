@@ -1,4 +1,4 @@
-<div style="display:flex; justify-content:space-between; width:80%; margin:auto; margin-top:40px;">
+<div style=" display:flex; justify-content:space-between; width:80%; margin:auto; margin-top:40px;">
   <a class ="timeline-links" ui-sref="Timeline0" ng-click="vm.setDecade(0); vm.navSelect(0)">1900s</a>
   <a class ="timeline-links" ui-sref="Timeline1" ng-click="vm.setDecade(1); vm.navSelect(1)" >1910s</a>
   <a class ="timeline-links" ui-sref="Timeline2" ng-click="vm.setDecade(2); vm.navSelect(2)">1920s</a>
@@ -13,10 +13,15 @@
   <a class ="timeline-links" ui-sref="Timeline11" ng-click="vm.setDecade(11); vm.navSelect(11)">2010s</a>
 </div>
 
-<div class ="intro-div">
+<div ng-class="{'intro-div-2':vm.hovering}" class ="intro-div" id="intro-div">
   <p class="page-heads" style="text-align:left; margin-left:-3px; letter-spacing:0px;">Regional Parks Rise</p>
     <p style="font-size:14px; margin-top:-34px; color:#696969;">By the 1960s, the attractions industry was in the throes of a radical change. The opening of Six Flags Over Texas in 1961 proved the viability of the regional theme park, and soon the concept spread throughout the United States. New genres such as marine-life parks, studio tours, and early water parks were added to the mix. While it was a quiet decade among amusement parks outside the United States, the European ride manufacturers were changing the industry. Their colorful, flashy rides—Himalayas, Bayern Kurves, Giant Ferris wheel, and a new generation of portable steel roller coasters—were in great demand and played a critical role in the emerging globalization of the industry as they were sought after by facility operators throughout the world.
   </p>
+</div>
+
+<div id="show-btn" style="">
+<img  ng-mouseenter="vm.hovering=true;" style="margin-top:-30px;" src="assets/img/down-btn.png" alt="">
+<!-- <img  style="display:none" ng-style="show" ng-mouseenter="vm.collapse=true; hide={'display':'block'} show={'display':'none'}" style="margin-top:-30px;" src="assets/img/up-btn.png" alt=""> -->
 </div>
 
 <div class="timeline-container" style="">
@@ -75,7 +80,7 @@
     <div class="timeline-block next">
       <img src="/assets/img/year-bar/1966.png" alt="">
       <div class="timeline-content next" style="width:auto; height:auto; max-width:300px;">
-        <p class="" style="color:#696969; font-size:14px;"><strong>1966 |</strong>  The International Association of Fairs and Expositions (IAFE), which held its convention concurrently in Chicago with IAAP since the 1930s and attended IAAP’s trade show, considered splitting off and holding its own convention and trade show at the same time in another city. IAFE cited challenges with the aging Sherman House and a lack of revenue opportunities. After lengthy negotiations, the organizations agreed to continue holding their conventions concurrently in Chicago for four years. A $25 increase in the booth rental fee would be split between the IAFE and Showmen’s League of America.</p><p class="indent-p">The controversy resulted in reduced attendance at the convention, with just $2.5 million in orders booked, less than the amount from the year before. Approximately $1.8 million was booked by Chance, driven by its Skydiver and Rotor rides.</p><p class="indent-p">IAAP distributed promotion kits to its members containing print ad templates that could be customized by each facility, saving engraving costs. It also distributed a promotion scrapbook—a binder containing best practices in various promotional activities such as price promotions, picnic advertising, and brochures
+        <p class="" style="color:#696969; font-size:14px;"><strong>1966 |</strong>  The International Association of Fairs and Expositions (IAFE), which held its convention concurrently in Chicago with IAAP since the 1930s and attended IAAP’s trade show, considered splitting off and holding its own convention and trade show at the same time in another city. IAFE cited challenges with the aging Sherman House and a lack of revenue opportunities. After lengthy negotiations, the organizations agreed to continue holding their conventions concurrently in Chicago for four years. A $25 increase in the booth rental fee would be split between the IAFE and Showmen’s League of America.</p><p class="indent-p">The controversy resulted in reduced attendance at the convention, with just $2.5 million in orders booked, less than the amount from the year before. Approximately $1.8 million was booked by Chance, driven by its Skydiver and Rotor rides.</p><p class="indent-p">IAAP distributed promotion kits to its members containing print ad templates that could be customized by each facility, saving engraving costs. It also distributed a promotion scrapbook—a binder containing best practices in various promotional activities such as price promotions, picnic advertising, and brochures.
         </p>
       </div>
     </div>
@@ -93,7 +98,7 @@
       <img src="/assets/img/year-bar/1968.png" alt="">
       <div class="timeline-content next" style="width:auto; height:auto; max-width:300px;">
         <img class="timeline-img" src="/assets/img/year_photos/1968.png" alt="">
-        <p class="" style="color:#696969; font-size:14px;"><strong>1968 |</strong>  Leonard Thompson of England’s Blackpool Pleasure Beach was added to the IAAP Board of Directors, becoming the first directorfrom outside North America.</p><p class="indent-p">The convention introduced an Under 35 session focusing on younger park executives. Reflecting the dominance of family-owned facilities, topics included how to influence “elder statesmen,” financing, cost savings, and “communications techniques between owner-father and son-manager.”</p><p class="indent-p">The What’s New Theater provided an overview of new attractions in the industry. It was part of the convention program for the first time and served as the forerunner of today’s IAAPA Attractions Expo Kickoff Event.</p><p class="indent-p"> The board voted to increase dues to finance a $40,000 public relations campaign
+        <p class="" style="color:#696969; font-size:14px;"><strong>1968 |</strong>  Leonard Thompson of England’s Blackpool Pleasure Beach was added to the IAAP Board of Directors, becoming the first director from outside North America.</p><p class="indent-p">The convention introduced an Under 35 session focusing on younger park executives. Reflecting the dominance of family-owned facilities, topics included how to influence “elder statesmen,” financing, cost savings, and “communications techniques between owner-father and son-manager.”</p><p class="indent-p">The What’s New Theater provided an overview of new attractions in the industry. It was part of the convention program for the first time and served as the forerunner of today’s IAAPA Attractions Expo Kickoff Event.</p><p class="indent-p"> The board voted to increase dues to finance a $40,000 public relations campaign.
         </p>
       </div>
     </div>

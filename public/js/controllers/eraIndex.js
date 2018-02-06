@@ -8,6 +8,8 @@ angular
 ])
 
 function indexController(eraFactory, $http, $state) {
+  this.hovering = false
+  // this.collapse = false
   // console.log('at index')
   // this.eras = eraFactory.query()
   // console.log(eraFactory.query())
@@ -49,6 +51,18 @@ function indexController(eraFactory, $http, $state) {
   //
   // }
 
+  this.isOverflown = function () {
+    console.log('checking for overflow')
+    var element = document.getElementById("intro-div")
+    var btn = document.getElementById("show-btn")
+    if (element.scrollHeight > element.clientHeight || element.scrollWidth > element.clientWidth) {
+      console.log('changing button')
+      btn.style.display="flex"
+      btn.style.justifyContent = "center"
+    }
+    return element.scrollHeight > element.clientHeight || element.scrollWidth > element.clientWidth;
+}
+
   this.handleNext = function() {
     console.log('next')
     console.log(document.getElementsByClassName('first-4'))
@@ -79,6 +93,7 @@ if (this.slideNum === 1 && nextPages.length==0) {
 
   nextSlide.style.display = "none"
   nextDecade.style.display = "block"
+  this.slideNum = 1
 }
 
 if (this.slideNum === 1 && nextPages.length>0) {
@@ -177,5 +192,7 @@ if (this.slideNum === 1 && nextPages.length>0) {
     }
 
   }
+
+  this.isOverflown()
 
   }
