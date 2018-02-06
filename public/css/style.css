@@ -481,6 +481,16 @@ input[type=checkbox]:checked ~ .mobile-drop-content {
 }
 }
 
+@media only screen and (max-width: 1400px){
+
+
+.line-div {
+  /* flex-direction:column; */
+  /* align-items:center; */
+  flex-wrap:wrap;
+}
+}
+
 .dropdown-2 {
     position: relative;
     display: inline-block;
