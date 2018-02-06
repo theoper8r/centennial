@@ -387,16 +387,24 @@ button:focus { outline:0 !important; }
       color: #696969;
       padding: 12px 16px;
       text-decoration: none;
-      /* display: block; */
+      display: block;
 }
 
-.mob-drop-btn:hover .mobile-drop-content{
+/* .mob-drop-btn:checked ~ .mobile-drop-content{
+  display:flex;
+} */
+
+.mob-drop-btn:active ~ .mobile-drop-content{
   display:flex;
 }
 
-.mob-drop-btn:active .mobile-drop-content{
+.mob-drop-btn:visited ~ .mobile-drop-content{
   display:flex;
 }
+
+/* .mob-drop-btn.active ~ .mobile-drop-content{
+  display:flex;
+} */
 
 @media screen and (max-width: 600px){
 .nav-div {
@@ -406,6 +414,7 @@ button:focus { outline:0 !important; }
 .mobile-nav {
   display:flex;
 }
+
 }
 
 .dropdown-2 {
