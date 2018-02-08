@@ -14,6 +14,8 @@
     <script type="text/javascript" src="/assets/js/services/leaderService.js"></script>
     <script type="text/javascript" src="/assets/js/controllers/leaders.js"></script>
     <script type="text/javascript" src="/assets/js/controllers/storiesCtrl.js"></script>
+    <script type="text/javascript" src="/assets/js/controllers/homeCtrl.js"></script>
+
 
 
     <link rel="icon" href="assets/img/favicon.png">
@@ -34,7 +36,7 @@
     <nav>
 
 
-      <div class="nav-div hvr-fade logo" style="background-color:#b09b66; width:144px; height:100px; padding-left:30px; margin-top:-4px; margin-bottom:-10px; margin-left:-31px;">
+      <div class="nav-div hvr-fade logo-div" style="">
         <a class="logo" ui-sref="Home"><img id="logo" class="logo" align="left" src="/assets/img/logo-rev-90.png" style="width:114px;"></a>
       </div>
       <div class="nav-div hvr-fade">
@@ -100,7 +102,7 @@
         </div></label>
         <input type="checkbox" id="mob-toggle">
         <div class="mobile-drop-content">
-          <a ui-sref="About" class="title" style="font-size:14px;">ABOUT IAAPA</a>
+          <a ng-click="vm.uncheck()" ui-sref="About" class="title" style="font-size:14px;">ABOUT IAAPA</a>
           <a ui-sref="Timeline0" style="font-size:14px;">IAAPA TIMELINE</a>
           <a class="" ui-sref="Leaders" style="font-size:14px;">LEADERS OF DISTINCTION</a>
           <a ui-sref="Stories" style="font-size:14px;">YOUR IAAPA STORIES</a>

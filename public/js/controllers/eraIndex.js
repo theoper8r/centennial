@@ -8,6 +8,13 @@ angular
 ])
 
 function indexController(eraFactory, $http, $state) {
+  console.log('hello')
+  // this.uncheck() = function  {
+  //   console.log('unchecking')
+  //   document.getElementById('mob-toggle').clicked = false
+  // }
+
+  // this.uncheck()
   this.hovering = false
   // this.collapse = false
   // console.log('at index')

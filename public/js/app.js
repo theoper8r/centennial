@@ -32,7 +32,9 @@ function Router($stateProvider, $urlRouterProvider, $locationProvider, $window) 
   $stateProvider
   .state('Home', {
     url: '/',
-    templateUrl: 'assets/js/views/home.html'
+    templateUrl: 'assets/js/views/home.html',
+    contoller: 'homeCtrl',
+    controllerAs: 'vm'
   })
   .state('About', {
     url: '/about',
