@@ -144,6 +144,14 @@ nav a {
 
 }
 
+.pd2 {
+   width:auto; height:453px; margin-left:40px; padding-left:50px;
+}
+
+.pd2-content {
+   width:auto; height:355px; overflow:scroll; border:none; margin-left:-25px;
+}
+
 .p-div-right {
   width:85%;
   margin-right:60px;
@@ -160,6 +168,14 @@ nav a {
   border-right: 1px solid #b09b66;
   padding-right:25px;
   height:auto;
+}
+
+.pdr-2 {
+   width:auto; height:453px; margin-right:40px;
+}
+
+.pdr-2-content {
+   width:auto; height:355px; overflow:scroll; border:none; margin-left:0px;
 }
 
 .gallery {
@@ -459,9 +475,35 @@ input[type=checkbox]:checked ~ .mobile-drop-content {
   margin-left:100px;
 }
 
+.new-home-div-1 {
+  width:830px;
+  max-width:830px;
+  margin:auto;
+  margin-bottom:100px;
+}
+
+.new-home-div-2 {
+  width:830px;
+  max-width:830px;
+  margin:auto;
+  margin-top:50px;
+  text-align:left;
+}
+
+.new-home-content {
+  max-width:830px;
+}
+
 @media only screen and (max-width: 1000px){
 .nav-div:not(.logo) {
   display:none;
+}
+.logo {
+  transform:scale(.85, .85)
+}
+
+nav {
+  border:none;
 }
 
 .mobile-nav {
@@ -482,6 +524,11 @@ input[type=checkbox]:checked ~ .mobile-drop-content {
   border-left:none;
   margin-left:-30px;
   padding-left:-30px;
+  overflow:visible;
+}
+
+.pd2, .pd2-content, .pdr-2, .pdr-2-content {
+  height:auto;
 }
 
 .page-heads {
@@ -494,6 +541,7 @@ h4 {
 
 .p-div-right-2 {
   border-right:none;
+  overflow:visible;
 }
 
 .img-div {
@@ -501,6 +549,28 @@ h4 {
   margin-top:10px;
   margin-bottom:10px;
 
+}
+
+.intro-div {
+  width:80%;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.timeline-container {
+  width:80%;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.timeline-link-div {
+  flex-wrap:wrap;
+  width:569px;
+}
+
+#show-btn {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 br {
@@ -521,6 +591,26 @@ br {
 
 .story-box {
   margin:0px;
+}
+
+.video-container {
+  flex-direction:column;
+  width:100%;
+}
+
+.new-home-div-1 {
+  width:90%;
+  margin-left:auto;
+  margin-right:auto;
+}
+.new-home-div-2 {
+  width:90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.new-home-content {
+  width:90%;
 }
 }
 
