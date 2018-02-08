@@ -2,6 +2,7 @@ angular.module('centennial')
 .controller('ScrollCtrl', [
   '$scope',
   '$location',
+  '$anchorScroll',
   anchorScroll
 ])
 
