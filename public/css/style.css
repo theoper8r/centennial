@@ -478,8 +478,33 @@ input[type=checkbox]:checked ~ .mobile-drop-content {
   flex-direction:column;
 }
 
+.p-div-2 {
+  border-left:none;
+  margin-left:-30px;
+  padding-left:-30px;
+}
+
+.page-heads {
+  /* margin-left:-40px; */
+}
+
+h4 {
+  /* margin-left:-40px; */
+}
+
+.p-div-right-2 {
+  border-right:none;
+}
+
 .img-div {
-  order:1;
+  order:-1;
+  margin-top:10px;
+  margin-bottom:10px;
+
+}
+
+br {
+  display:none;
 }
 
 .story-container {
