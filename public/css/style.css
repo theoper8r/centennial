@@ -178,6 +178,14 @@ nav a {
    width:auto; height:355px; overflow:scroll; border:none; margin-left:0px;
 }
 
+.shadow-img {
+  margin-left:40px;
+}
+
+.shadow-img-left {
+  margin-left:50px;  margin-right:40px;
+}
+
 .gallery {
   width: 640px;
   margin: 0 auto;
@@ -518,17 +526,32 @@ nav {
 
 .inner-div {
   flex-direction:column;
+  align-content:flex-start;
 }
 
 .p-div-2 {
   border-left:none;
-  margin-left:-30px;
-  padding-left:-30px;
+  /* margin-left:-30px; */
+  /* padding-left:-30px; */
   overflow:visible;
 }
 
 .pd2, .pd2-content, .pdr-2, .pdr-2-content {
   height:auto;
+  width:100%;
+  margin-left:0px;
+  padding-left:0px;
+
+}
+
+.shadow-img {
+  margin-left:0px;
+  align-content:flex-start;
+}
+
+.shadow-img-left {
+  margin-left:0px;
+  margin-right:0px;
 }
 
 .page-heads {
@@ -548,8 +571,11 @@ h4 {
   order:-1;
   margin-top:10px;
   margin-bottom:10px;
+  /* width:300px; */
 
 }
+
+
 
 .intro-div {
   width:80%;
