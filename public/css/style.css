@@ -272,15 +272,27 @@ button:focus { outline:0 !important; }
 
 }
 
-.intro-div-2 {
-  width:823px;
+/* .intro-div-2 {
+  width:823px; */
   /* margin-left:auto; */
   /* margin-right:auto; */
-  margin-bottom:30px;
+  /* margin-bottom:30px;
   height:100%;
   overflow: scroll;
   margin-left:282px;
   margin-right:250px;
+} */
+
+.intro-div-2 {
+  width:10%;
+  /* margin-left:282px; */
+  /* margin-right:250px; */
+  margin-right:auto;
+  margin-left:auto;
+  min-width:800px;
+  margin-bottom:30px;
+  height:100%;
+
 }
 
 /* .intro-div:hover {
