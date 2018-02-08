@@ -474,6 +474,14 @@ input[type=checkbox]:checked ~ .mobile-drop-content {
   /* flex-wrap:wrap; */
 }
 
+.inner-div {
+  flex-direction:column;
+}
+
+.img-div {
+  order:1;
+}
+
 .story-container {
   flex-direction:column;
   align-items:center;
