@@ -265,7 +265,7 @@ button:focus { outline:0 !important; }
   /* margin-right:250px; */
   margin-right:auto;
   margin-left:auto;
-  min-width:800px;
+  min-width:825px;
   margin-bottom:30px;
   height:200px;
   overflow: scroll;
@@ -292,6 +292,7 @@ button:focus { outline:0 !important; }
   min-width:800px;
   margin-bottom:30px;
   height:100%;
+  overflow: scroll;
 
 }
 
