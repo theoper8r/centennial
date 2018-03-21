@@ -8,6 +8,8 @@ angular.module('centennial')
 
   function anchorScroll($anchorScroll, $location) {
 
+    console.log('at leaders')
+
     this.leaders = []
     this.gotoAnchor = function(x) {
       console.log('scrolling')

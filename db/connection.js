@@ -9,4 +9,9 @@ if (process.env.NODE_ENV == "production") {
   useMongoClient: true
 }
 }
+
+// mongoose.connect('mongodb://localhost/centennial'), {
+// useMongoClient: true
+// }
+
 module.exports = mongoose

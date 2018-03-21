@@ -4,10 +4,16 @@ angular.module('centennial')
   '$location',
   '$http',
   '$state',
+  'loginService',
   storiesFn
 ])
 
-  function storiesFn($anchorScroll, $location, $http, $state) {
+  function storiesFn($anchorScroll, $location, $http, $state, loginService) {
+
+    // console.log(loginService.logInCheck)
+    loginService.logInCheck()
+
+    console.log('at stories')
 
     var data = {
       name: this.name,

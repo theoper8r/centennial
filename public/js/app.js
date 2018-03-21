@@ -30,10 +30,16 @@ function Router($stateProvider, $urlRouterProvider, $locationProvider, $window) 
   $locationProvider.hashPrefix('')
 
   $stateProvider
+  .state('Login', {
+    url: '/login',
+    templateUrl: 'assets/js/views/login.html',
+    controller: 'loginCtrl',
+    controllerAs: 'vm'
+  })
   .state('Home', {
     url: '/',
     templateUrl: 'assets/js/views/home.html',
-    contoller: 'homeCtrl',
+    controller: 'homeCtrl',
     controllerAs: 'vm'
   })
   .state('About', {

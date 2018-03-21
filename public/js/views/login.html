@@ -1,0 +1,10 @@
+<h1 style="text-align:center;">Admin Login</h1>
+
+<p style="text-align:center;">{{vm.errorMessage}}</p>
+
+<form style="width:40%; margin:auto; margin-bottom:200px;" class="" id="loginForm" name="loginForm" ng-submit="vm.validateUser(vm.passwordLogin, vm.emailLogin)">
+  <input type="email" name="email" ng-model="vm.emailLogin"  placeholder="Email">
+  <input style="border-bottom:1px solid #b09b66"type="password" name="password" ng-model="vm.passwordLogin" placeholder="Password">
+  <input id="submit" ng-click="test()" style="border-bottom:1px solid #b09b66; width:40%; margin:auto;" type="submit" name="Submit" >
+
+</form>

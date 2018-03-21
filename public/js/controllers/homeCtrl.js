@@ -14,9 +14,9 @@ console.log('linked')
 
     console.log('linked')
 
-    this.uncheck = function () {
-      console.log('unchecking')
-      document.getElementById('mob-toggle').checked = false
-      console.log('unchecked')
-    }
+    // this.uncheck = function () {
+    //   console.log('unchecking')
+    //   document.getElementById('mob-toggle').checked = false
+    //   console.log('unchecked')
+    // }
   }

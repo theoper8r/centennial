@@ -1,5 +1,8 @@
 const formData = require('./seeds.json')
-const Form = require('./schema.js')
+const Form = require('./schema.js').Form
+const User = require('./schema.js').User
+
+console.log(Form)
 
 Form.remove({}).then(function(){
   formData.forEach(function(data) {
@@ -12,9 +15,11 @@ Form.remove({}).then(function(){
       story: data.story
     })
       .then((newForm) => {
+        console.log('adding')
         console.log(newForm)
       })
       .catch((err) => {
+        console.log('error')
         console.log(err)
       })
 
@@ -23,9 +28,13 @@ Form.remove({}).then(function(){
     process.exit()
   })
   .catch((err) => {
+    console.log('error')
     console.log(err)
   })
 })
-.catch((err) => {
-  console.log(err)
+
+
+User.create({
+  email: 'pwilliam@iaapa.org',
+  password: 'iaapa100pw'
 })
