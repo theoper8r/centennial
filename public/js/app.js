@@ -132,7 +132,9 @@ function Router($stateProvider, $urlRouterProvider, $locationProvider, $window) 
   })
   .state('History', {
     url: '/history',
-    templateUrl: 'assets/js/views/history.html'
+    templateUrl: 'assets/js/views/history.html',
+    controller: 'historyCtrl',
+    controllerAs: 'vm'
   })
   .state('newHome', {
     url: '/newhome',

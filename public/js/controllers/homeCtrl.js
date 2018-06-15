@@ -5,14 +5,15 @@ angular.module('centennial')
   '$location',
   '$http',
   '$state',
+  'loginService',
   homeFn
 ])
 
-console.log('linked')
 
-  function homeFn( $location, $http, $state) {
+  function homeFn( $location, $http, $state, loginService ) {
 
     console.log('linked')
+
 
     // this.uncheck = function () {
     //   console.log('unchecking')

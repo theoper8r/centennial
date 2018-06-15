@@ -32,7 +32,7 @@ angular.module('centennial')
           loginService.isLoggedIn = false
           console.log('logged out')
         }, 1800000)
-        $location.path("/stories")
+        $location.path("/history")
       }
       else {
 

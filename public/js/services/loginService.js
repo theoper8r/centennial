@@ -9,9 +9,10 @@ angular.module('centennial')
       localStorage.setItem('isLoggedIn', false)
       console.log('login is ' + localStorage.getItem('isLoggedIn'))
     },
-    logInCheck: function() {
+    authCheck: function() {
       console.log('login check is ' + localStorage.getItem('isLoggedIn'))
-    },
-    isLoggedIn: this.isLoggedIn
+      return localStorage.getItem('isLoggedIn')
+    }
+    // isLoggedIn: this.isLoggedIn
   }
 })
